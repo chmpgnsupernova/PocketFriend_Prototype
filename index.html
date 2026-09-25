@@ -1,1 +1,1917 @@
-<h1>Coming Soon</h1>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototipe IsFest 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main class="stage">
+  <div class="device-slot" id="slot">
+    <div class="device" id="device">
+      <span class="vol vol--up"></span>
+      <span class="vol vol--down"></span>
+      <div class="screen" id="screen">
+        <div class="notch"></div>
+        <div class="viewport" id="viewport">
+
+<!-- ======================================================
+     01 · Get Ready — 797:4149
+     ====================================================== -->
+<section class="scr scr--flush" data-screen="get-ready">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar appbar--center"><h1 class="appbar-title">Get Ready!</h1></div>
+    <div class="pg" style="--fill:47px"><img class="pg-line" src="assets/line-0748.svg" width="29.7756" height="3" alt=""></div>
+    <div class="intro">
+      <p class="intro-title">Hai aku <span class="c-primary">Bebe</span>, bantu aku isi beberapa pertanyaan!</p>
+      <div class="intro-art">
+        <div class="crop" style="width:191px;height:192px">
+          <img src="assets/bear-wave.png" alt="Beruang Bebe melambai sambil memegang toples madu" style="height:100.08%;left:-36.52%;top:-0.04%;width:183.48%">
+        </div>
+      </div>
+      <p class="intro-caption">Pertanyaan ini nantinya akan membantu <b>Bebe </b>dalam memilih strategi yang tepat untuk finansial-mu</p>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     02 · Lengkapi Profile — 797:2904 (kosong) / 797:4650 (terisi)
+     ====================================================== -->
+<section class="scr" data-screen="profile">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar appbar--start">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Lengkapi Profile</h1>
+    </div>
+    <div class="pg" style="--fill:69px"><img class="pg-line" src="assets/line-54.svg" width="57" height="3" alt=""></div>
+    <div class="avatar-wrap">
+      <button class="avatar" type="button" id="avatarBtn" aria-label="Pilih foto profil">
+        <img class="av-empty" src="assets/avatar-empty.svg" width="87" height="87" alt="">
+        <img class="av-photo" src="assets/avatar-photo.png" width="87" height="87" alt="">
+        <img class="av-band" src="assets/avatar-band.svg" width="75.0889" height="21.75" alt="">
+        <img class="av-cam" src="assets/camera.svg" width="17.4" height="17.4" alt="">
+      </button>
+    </div>
+    <div class="field-row">
+      <label class="field">
+        <span class="field-label">Nama Depan</span>
+        <span class="field-box"><input type="text" id="firstName" placeholder="Ex. John" autocomplete="given-name"></span>
+      </label>
+      <label class="field">
+        <span class="field-label">Nama Belakang</span>
+        <span class="field-box"><input type="text" id="lastName" placeholder="Ex. Doe" autocomplete="family-name"></span>
+      </label>
+    </div>
+    <div class="field">
+      <span class="field-label" id="statusLabel">Status Pekerjaan</span>
+      <div class="opt-list" role="radiogroup" aria-labelledby="statusLabel" data-group="status">
+        <button class="opt" type="button" role="radio" aria-checked="false" data-value="Karyawan">
+          <span class="opt-ico">KP</span>
+          <span class="opt-text"><span class="opt-title">Karyawan / Pekerja Tetap</span><span class="opt-sub">Alokasi gaji bulanan teratur &amp; pos dana darurat</span></span>
+          <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+        </button>
+        <button class="opt" type="button" role="radio" aria-checked="false" data-value="Freelancer">
+          <span class="opt-ico">FL</span>
+          <span class="opt-text"><span class="opt-title">Freelancer / Pekerja Lepas</span><span class="opt-sub">Arus kas dinamis &amp; batas belanja harian adaptif</span></span>
+          <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+        </button>
+        <button class="opt" type="button" role="radio" aria-checked="false" data-value="Wirausaha">
+          <span class="opt-ico">WB</span>
+          <span class="opt-text"><span class="opt-title">Wirausaha / Bisnis</span><span class="opt-sub">Pemisahan modal usaha dan pengeluaran pribadi</span></span>
+          <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+        </button>
+        <button class="opt" type="button" role="radio" aria-checked="false" data-value="Mahasiswa">
+          <span class="opt-ico">MF</span>
+          <span class="opt-text"><span class="opt-title">Mahasiswa / Fresh Grad</span><span class="opt-sub">Fokus pembentukan kebiasaan &amp; tabungan awal</span></span>
+          <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     03 · Pemasukan Bulanan — 797:4593 (kosong) / 797:2982 (terisi)
+     ====================================================== -->
+<section class="scr" data-screen="income">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Finansial Profile</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:102px"><img class="pg-line" src="assets/line-2382.svg" width="88.2853" height="3" alt=""></div>
+    <div class="hd hd--pad">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Berapa Pemasukan Bulananmu?</p>
+      <p class="hd-sub hd-sub--195">Bantu kami memetakan kapasitas pengeluaran dan<br>tabungan idealmu.</p>
+    </div>
+    <div class="money" id="incomeCard">
+      <div class="money-row">
+        <span class="money-cur">Rp</span>
+        <input class="money-input" id="incomeInput" inputmode="numeric" autocomplete="off" placeholder="Ex. 2.000.000" aria-label="Jumlah pemasukan bulanan">
+      </div>
+      <div class="money-rule"></div>
+      <div class="presets" role="group" aria-label="Pilihan cepat">
+        <button class="preset" type="button" data-income="2000000"><b>Rp 2 Juta</b><span>±Rp 91rb/hari kerja</span></button>
+        <button class="preset" type="button" data-income="3000000"><b>Rp 3 Juta</b><span>±Rp 136rb/hari kerja</span></button>
+        <button class="preset" type="button" data-income="5000000"><b>Rp 5 Juta</b><span>±Rp 227rb/hari kerja</span></button>
+        <button class="preset" type="button" data-income="8000000"><b>Rp 8 Juta</b><span>±Rp 364rb/hari kerja</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     04 · Prioritas Keuangan — 797:3115 (kosong) / 797:3177 (terisi)
+     ====================================================== -->
+<section class="scr" data-screen="priority">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Finansial Profile</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:162px"><img class="pg-line" src="assets/line-4044.svg" width="147.787" height="3" alt=""></div>
+    <div class="hd">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Apa prioritas keuangan kamu sekarang?</p>
+      <p class="hd-sub">Pilih satu fokus utama agar kami bisa menyesuaikan strategi alokasi harianmu.</p>
+    </div>
+    <div class="opt-list" role="radiogroup" aria-label="Prioritas keuangan" data-group="priority">
+      <button class="opt" type="button" role="radio" aria-checked="false" data-value="CR">
+        <span class="opt-ico">CR</span>
+        <span class="opt-text"><span class="opt-title">Cicilan saya besar</span><span class="opt-sub">Butuh strategi bayar utang</span></span>
+        <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+      </button>
+      <button class="opt" type="button" role="radio" aria-checked="false" data-value="TR">
+        <span class="opt-ico">TR</span>
+        <span class="opt-text"><span class="opt-title">Arus kas saya negatif</span><span class="opt-sub">Pengeluaran &gt; pemasukan</span></span>
+        <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+      </button>
+      <button class="opt" type="button" role="radio" aria-checked="false" data-value="PI">
+        <span class="opt-ico">PI</span>
+        <span class="opt-text"><span class="opt-title">Stabil tapi nggak menabung</span><span class="opt-sub">Uang habis tiap bulan</span></span>
+        <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+      </button>
+      <button class="opt opt--r10" type="button" role="radio" aria-checked="false" data-value="SH">
+        <span class="opt-ico">SH</span>
+        <span class="opt-text"><span class="opt-title">Ada sisa, tapi berantakan</span><span class="opt-sub">Butuh alokasi yang rapi</span></span>
+        <span class="radio"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="radio-on"><img src="assets/check-11.svg" width="11" height="11" alt=""></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     05A · Jumlah Cicilan — 797:3039
+     ====================================================== -->
+<section class="scr" data-screen="debt">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Finansial Profile</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:162px"><img class="pg-line" src="assets/line-4016.svg" width="146.795" height="3" alt=""></div>
+    <div class="hd hd--pad">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Berapa jumlah cicilan yang harus dibayar?</p>
+      <p class="hd-sub hd-sub--195">Bantu kami memetakan kapasitas pengeluaran dan<br>tabungan idealmu.</p>
+    </div>
+    <div class="money money--debt is-filled" id="debtCard">
+      <div class="money-group">
+        <div class="money-row">
+          <span class="money-cur">Rp</span>
+          <input class="money-input" id="debtInput" inputmode="numeric" autocomplete="off" placeholder="Ex. 5.000.000" aria-label="Jumlah cicilan">
+        </div>
+        <div class="money-rule"></div>
+      </div>
+      <div class="chips" role="radiogroup" aria-label="Periode" data-group="debtFreq">
+        <button class="chip" type="button" role="radio" aria-checked="false" data-value="Harian">Harian</button>
+        <button class="chip" type="button" role="radio" aria-checked="false" data-value="Mingguan">Mingguan</button>
+        <button class="chip" type="button" role="radio" aria-checked="false" data-value="Bulanan">Bulanan</button>
+        <button class="chip" type="button" role="radio" aria-checked="false" data-value="Atur Manual">Atur Manual</button>
+      </div>
+      <div class="field-row" style="gap:8px;width:100%">
+        <label class="field">
+          <span class="field-label">Bunga Cicilan</span>
+          <span class="field-box"><input type="text" id="debtRate" inputmode="decimal" autocomplete="off"><span>%</span></span>
+        </label>
+        <label class="field">
+          <span class="field-label">Sisa Target Cicilan</span>
+          <span class="field-box"><input type="text" id="debtMonths" inputmode="numeric" autocomplete="off"><span>/ Bln</span></span>
+        </label>
+      </div>
+      <div class="insight">
+        <img src="assets/lightbulb.svg" width="12.5" height="18.6667" alt="">
+        <div>
+          <p class="insight-label">Target Cicilan</p>
+          <p class="insight-text insight-text--justify" id="debtInsight"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     06A · Rasio Alokasi (Fokus Bebas Utang) — 797:3346
+     ====================================================== -->
+<section class="scr" data-screen="ratio-debt">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Finansial Profile</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:234px"><img class="pg-line" src="assets/line-218.svg" width="221" height="3" alt=""></div>
+    <div class="hd">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Pilih rasio alokasi kamu</p>
+      <p class="hd-sub">Berdasarkan jawabanmu, ini rekomendasi kami tapi kamu yang mutusin.</p>
+    </div>
+    <div class="opt-list">
+      <div class="ratio-card">
+        <div><p class="ratio-title">Fokus Bebas Utang</p><p class="ratio-sub">Cicilan didahulukan agar lekas lega.</p></div>
+        <div class="bar">
+          <i style="left:0;top:.25px;width:161px;background:var(--seg-needs)"></i>
+          <i style="left:160px;top:.25px;width:68px;background:var(--seg-wants)"></i>
+          <i style="left:224px;width:72.2px;background:var(--seg-save)"></i>
+          <i style="left:296px;width:72.2px;background:var(--seg-debt)"></i>
+        </div>
+        <div class="bar-labels">
+          <div><b style="color:#1633a8">50%</b><span>Rp3.750.000</span></div>
+          <div><b style="color:#8a5a15">20%</b><span>Rp1.500.000</span></div>
+          <div><b style="color:#2f6b57">22.3%</b><span>Rp 1.675.000</span></div>
+          <div><b style="color:#9b1e12">7,7%</b><span>Rp 575.000</span></div>
+        </div>
+        <div class="breakdown">
+          <div class="bd-item"><i class="bd-dot" style="background:#2656ff"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#1633a8">Kebutuhan &amp; Pokok (50%)</span><span class="bd-amt">Rp 3.750.000</span></div><div class="bd-desc">Cicilan prioritas, belanja dapur, &amp; sewa</div></div></div>
+          <div class="bd-item"><i class="bd-dot" style="background:#d97706"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#bc6f03">Gaya Hidup (20%)</span><span class="bd-amt">Rp 1.500.000</span></div><div class="bd-desc">Ngopi santai, jajan harian, &amp; hiburan</div></div></div>
+          <div class="bd-item"><i class="bd-dot" style="background:#059669"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#065f46">Tabungan &amp; Investasi (22.3%)</span><span class="bd-amt">Rp 1.675.000</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+          <div class="bd-item"><i class="bd-dot" style="background:#9b1e12"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#9b1e12">Cicilan(7,7%)</span><span class="bd-amt">Rp 575.000</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+        </div>
+      </div>
+      <div class="presets-box" role="radiogroup" aria-label="Pilihan rasio" data-group="ratioA">
+        <button class="preset-opt" type="button" role="radio" aria-checked="false" data-value="rec">
+          <span class="preset-opt-main">
+            <span class="preset-opt-head"><span class="preset-opt-title">Fokus Bebas Utang</span><span class="tag">Rekomendasi</span></span>
+            <span class="preset-opt-desc">50%<span> Kebutuhan · </span>20%<span> Gaya Hidup · </span>22.3%<br><span>Tabungan · 7,7% Cicilan. Cicilan didahulukan agar lekas lega.</span></span>
+          </span>
+          <span class="preset-opt-mark"><span class="ring"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </button>
+        <div class="divider-soft"></div>
+        <div class="divider-soft"></div>
+      </div>
+      <button class="manual-card" type="button" role="radio" aria-checked="false" data-group-item="ratioA" data-value="manual">
+        <span class="opt-text"><span class="opt-title">Atur Manual</span><span class="opt-sub">Tentukan sendiri porsi tiap kantong</span></span>
+        <img src="assets/radio-empty.svg" width="20" height="20" alt="">
+        <span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+      </button>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     05B · Rasio Alokasi (Keuangan Seimbang) — 797:4520 (kosong) / 797:3241 (dipilih)
+     ====================================================== -->
+<section class="scr" data-screen="ratio">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Finansial Profile</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:234px"><img class="pg-line" src="assets/line-6038.svg" width="219.188" height="3" alt=""></div>
+
+    <!-- Keadaan kosong / atur manual (797:4520) -->
+    <div class="hd" data-state="empty">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Pilih rasio alokasi kamu</p>
+      <p class="hd-sub">Berdasarkan jawabanmu, ini rekomendasi kami tapi kamu yang mutusin.</p>
+    </div>
+    <div class="opt-list" data-state="empty">
+      <div class="ratio-card">
+        <p class="ratio-title">Pilih Rasio</p>
+        <div class="bar bar--flex"><i style="background:var(--seg-needs)"></i><i style="background:var(--seg-wants)"></i><i style="background:var(--seg-save)"></i></div>
+        <div class="bar-labels">
+          <div><b style="color:#1633a8">0%</b><span>Rp -</span></div>
+          <div><b style="color:#8a5a15">0%</b><span>Rp -</span></div>
+          <div><b style="color:#2f6b57">0%</b><span>Rp -</span></div>
+        </div>
+      </div>
+      <div class="presets-box">
+        <button class="preset-opt" type="button" role="radio" aria-checked="false" data-group-item="ratioB" data-value="rec">
+          <span class="preset-opt-main">
+            <span class="preset-opt-head"><span class="preset-opt-title preset-opt-title--21">Keuangan Seimbang</span><span class="tag">Rekomendasi</span></span>
+            <span class="preset-opt-desc">60%<span> Kebutuhan · </span>20%<span> Gaya Hidup · </span>20% <span>Tabungan. Cicilan didahulukan agar lekas lega.</span></span>
+          </span>
+          <span class="preset-opt-mark"><span class="ring"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </button>
+        <div class="divider-soft"></div>
+        <div class="divider-soft"></div>
+      </div>
+      <button class="manual-card" type="button" role="radio" aria-checked="false" data-group-item="ratioB" data-value="manual">
+        <span class="opt-text"><span class="opt-title">Atur Manual</span><span class="opt-sub">Tentukan sendiri porsi tiap kantong</span></span>
+        <img src="assets/radio-empty.svg" width="20" height="20" alt="">
+        <span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+      </button>
+    </div>
+
+    <!-- Keadaan rekomendasi dipilih (797:3241) -->
+    <div class="opt-list" data-state="rec">
+      <div class="ratio-card">
+        <div><p class="ratio-title">Keuangan Seimbang</p><p class="ratio-sub">Cicilan didahulukan agar lekas lega.</p></div>
+        <div class="bar">
+          <i style="left:0;top:.25px;width:169px;background:var(--seg-needs)"></i>
+          <i style="left:161px;top:.25px;width:99px;background:var(--seg-wants)"></i>
+          <i style="left:260px;top:.25px;width:101px;background:var(--seg-save)"></i>
+        </div>
+        <div class="bar-labels">
+          <div><b style="color:#1633a8">50%</b><span>Rp3.750.000</span></div>
+          <div><b style="color:#8a5a15">30%</b><span>Rp2.250.000</span></div>
+          <div><b style="color:#2f6b57">20%</b><span>Rp1.500.000</span></div>
+        </div>
+        <div class="breakdown">
+          <div class="bd-item"><i class="bd-dot" style="background:#2656ff"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#1633a8">Kebutuhan &amp; Pokok (50%)</span><span class="bd-amt">Rp 3.750.000</span></div><div class="bd-desc">Cicilan prioritas, belanja dapur, &amp; sewa</div></div></div>
+          <div class="bd-item"><i class="bd-dot" style="background:#d97706"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#bc6f03">Gaya Hidup (30%)</span><span class="bd-amt">Rp 2.250.000</span></div><div class="bd-desc">Ngopi santai, jajan harian, &amp; hiburan</div></div></div>
+          <div class="bd-item"><i class="bd-dot" style="background:#059669"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#065f46">Tabungan &amp; Investasi (20%)</span><span class="bd-amt">Rp 1.500.000</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+        </div>
+      </div>
+      <div class="hd" style="padding-top:32px">
+        <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+        <p class="hd-q">Pilih rasio alokasi kamu</p>
+        <p class="hd-sub">Berdasarkan jawabanmu, ini rekomendasi kami tapi kamu yang mutusin.</p>
+      </div>
+      <div class="presets-box">
+        <button class="preset-opt" type="button" role="radio" aria-checked="false" data-group-item="ratioB" data-value="rec">
+          <span class="preset-opt-main">
+            <span class="preset-opt-head"><span class="preset-opt-title">Keuangan Seimbang</span><span class="tag">Rekomendasi</span></span>
+            <span class="preset-opt-desc">50%<span> Kebutuhan · </span>30%<span> Gaya Hidup · </span>20% <span>Tabungan. Cicilan didahulukan agar lekas lega.</span></span>
+          </span>
+          <span class="preset-opt-mark"><span class="ring"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </button>
+        <div class="divider-soft"></div>
+        <div class="divider-soft"></div>
+      </div>
+      <button class="manual-card" type="button" role="radio" aria-checked="false" data-group-item="ratioB" data-value="manual">
+        <span class="opt-text"><span class="opt-title">Atur Sendiri Rasio-mu</span><span class="opt-sub">Tentukan sendiri porsi tiap kantong</span></span>
+        <img src="assets/radio-empty.svg" width="20" height="20" alt="">
+        <span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+      </button>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     Sesuaikan Rasio — 797:4378 (kosong) / 797:3464 (terisi)
+     ====================================================== -->
+<section class="scr" data-screen="custom">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Finansial Profile</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:234px"><img class="pg-line" src="assets/line-6038.svg" width="219.188" height="3" alt=""></div>
+    <div class="hd">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Sesuaikan rasio-mu sendiri</p>
+      <p class="hd-sub">Ubah presentase rasiomu sesuai dengan kebutuhan harianmu.</p>
+    </div>
+    <div class="custom is-empty" id="customPanel">
+      <div class="custom-head">
+        <p>Visualisasi Pembagian Dana</p>
+        <span class="total" id="customTotal">Total : 0%</span>
+      </div>
+      <div class="bar" id="customBar" style="background:var(--chip)">
+        <i style="background:var(--seg-needs)"></i><i style="background:var(--seg-wants)"></i><i style="background:var(--seg-save)"></i>
+      </div>
+      <div class="bar-labels" id="customLabels">
+        <div><b style="color:#1633a8">0%</b><span>Rp 0</span></div>
+        <div><b style="color:#8a5a15">0%</b><span>Rp 0</span></div>
+        <div><b style="color:#2f6b57">0%</b><span>Rp 0</span></div>
+      </div>
+      <div class="custom-presets">
+        <p class="custom-presets-title" id="customPresetsTitle">Custom Rasio</p>
+        <div class="chips chips--8" id="customPresets">
+          <button class="chip" type="button" data-preset="50,30,20">50/30/20 (Klasik)</button>
+          <button class="chip" type="button" data-preset="60,20,20">60/20/20 (Prioritas Pokok)</button>
+          <button class="chip" type="button" data-preset="50,20,30">50/20/30 (Tabungan Ekstra)</button>
+          <button class="chip" type="button" data-preset="0,0,0"><img src="assets/reset.svg" width="9.33333" height="9.33333" alt="">Reset</button>
+        </div>
+      </div>
+      <div class="custom-list">
+        <div class="slider-item">
+          <div class="bd-item"><i class="bd-dot" style="background:#2656ff"></i><div class="bd-main"><div class="bd-row"><span class="bd-name">Kebutuhan &amp; Pokok <span style="color:#2656ff" data-pct>(0%)</span></span><span class="bd-amt" data-amt>Rp 0</span></div><div class="bd-desc">Belanja dapur, &amp; sewa</div></div></div>
+          <div class="slider-row">
+            <button class="step" type="button" data-step="-5" aria-label="Kurangi kebutuhan 5 persen"><img data-minus src="assets/minus.svg" width="10.5" height="1.5" alt=""></button>
+            <input class="range" type="range" min="0" max="100" step="1" value="0" aria-label="Porsi Kebutuhan &amp; Pokok" style="--c:#2656ff;--thumb:url(assets/thumb-blue.svg);--dot:url(assets/thumb-dot.svg)">
+            <button class="step" type="button" data-step="5" aria-label="Tambah kebutuhan 5 persen"><img data-plus src="assets/plus.svg" width="10.5" height="10.5" alt=""></button>
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="bd-item"><i class="bd-dot" style="background:#d97706"></i><div class="bd-main"><div class="bd-row"><span class="bd-name">Gaya Hidup <span style="color:#bc6f03" data-pct>(0%)</span></span><span class="bd-amt" data-amt>Rp 0</span></div><div class="bd-desc">Ngopi santai, jajan harian, &amp; hiburan</div></div></div>
+          <div class="slider-row">
+            <button class="step" type="button" data-step="-5" aria-label="Kurangi gaya hidup 5 persen"><img data-minus src="assets/minus.svg" width="10.5" height="1.5" alt=""></button>
+            <input class="range" type="range" min="0" max="100" step="1" value="0" aria-label="Porsi Gaya Hidup" style="--c:#d97706;--thumb:url(assets/thumb-orange.svg);--dot:url(assets/thumb-dot.svg)">
+            <button class="step" type="button" data-step="5" aria-label="Tambah gaya hidup 5 persen"><img data-plus src="assets/plus.svg" width="10.5" height="10.5" alt=""></button>
+          </div>
+        </div>
+        <div class="slider-item slider-item--strong">
+          <div class="bd-item"><i class="bd-dot" style="background:#059669"></i><div class="bd-main"><div class="bd-row"><span class="bd-name">Tabungan &amp; Investasi<span style="color:#065f46" data-pct> (0%)</span></span><span class="bd-amt" data-amt>Rp 0</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+          <div class="slider-row">
+            <button class="step" type="button" data-step="-5" aria-label="Kurangi tabungan 5 persen"><img data-minus src="assets/minus.svg" width="10.5" height="1.5" alt=""></button>
+            <input class="range" type="range" min="0" max="100" step="1" value="0" aria-label="Porsi Tabungan &amp; Investasi" style="--c:#208c19;--thumb:url(assets/thumb-green.svg);--dot:url(assets/thumb-dot.svg)">
+            <button class="step" type="button" data-step="5" aria-label="Tambah tabungan 5 persen"><img data-plus src="assets/plus.svg" width="10.5" height="10.5" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     07A · Ringkasan Finansial (Fokus Bebas Utang) — 797:3748
+     ====================================================== -->
+<section class="scr" data-screen="summary-a">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Ringkasan Finansial</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:282px"><img class="pg-line" src="assets/line-268.svg" width="271" height="3" alt=""></div>
+    <div class="summary-head">
+      <p class="summary-name">Frans Siskus,</p>
+      <div class="tiles">
+        <div class="tile"><span>Status</span><b>Mahasiswa</b></div>
+        <div class="tile"><span>Prioritas</span><b>Fokus Bebas Utang</b></div>
+        <div class="tile"><span>Pendapatan</span><b><span>Rp 7.500.000</span><span>/ Bln</span></b></div>
+        <div class="tile"><span>Cicilan</span><b>Tidak Ada</b></div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero-top">
+        <span class="hero-label"><img src="assets/shield.svg" width="12" height="15" alt="">Aman dibelanjakan mingguan</span>
+        <span class="hero-pill">Mingguan</span>
+      </div>
+      <p class="hero-amount">Rp 350.000</p>
+      <div class="hero-bottom"><span>dari sekat <b>Gaya Hidup</b></span><span>Rp 50.000/hari</span></div>
+    </div>
+    <div class="ratio-card">
+      <div><p class="ratio-title">Fokus Bebas Utang</p><p class="ratio-sub">Cicilan didahulukan agar lekas lega.</p></div>
+      <div class="bar">
+        <i style="left:0;top:.25px;width:161px;background:var(--seg-needs)"></i>
+        <i style="left:160px;top:.25px;width:68px;background:var(--seg-wants)"></i>
+        <i style="left:224px;width:72.2px;background:var(--seg-save)"></i>
+        <i style="left:296px;width:72.2px;background:var(--seg-debt)"></i>
+      </div>
+      <div class="bar-labels">
+        <div><b style="color:#1633a8">50%</b><span>Rp3.750.000</span></div>
+        <div><b style="color:#8a5a15">20%</b><span>Rp1.500.000</span></div>
+        <div><b style="color:#2f6b57">22.3%</b><span>Rp 1.675.000</span></div>
+        <div><b style="color:#9b1e12">7,7%</b><span>Rp 575.000</span></div>
+      </div>
+      <div class="breakdown">
+        <div class="bd-item"><i class="bd-dot" style="background:#2656ff"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#1633a8">Kebutuhan &amp; Pokok (50%)</span><span class="bd-amt">Rp 3.750.000</span></div><div class="bd-desc">Cicilan prioritas, belanja dapur, &amp; sewa</div></div></div>
+        <div class="bd-item"><i class="bd-dot" style="background:#d97706"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#bc6f03">Gaya Hidup (20%)</span><span class="bd-amt">Rp 1.500.000</span></div><div class="bd-desc">Ngopi santai, jajan harian, &amp; hiburan</div></div></div>
+        <div class="bd-item"><i class="bd-dot" style="background:#059669"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#065f46">Tabungan &amp; Investasi (22.3%)</span><span class="bd-amt">Rp 1.675.000</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+        <div class="bd-item"><i class="bd-dot" style="background:#9b1e12"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#9b1e12">Cicilan(7,7%)</span><span class="bd-amt">Rp 575.000</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     06B · Ringkasan Finansial (Keuangan Seimbang) — 797:3633
+     ====================================================== -->
+<section class="scr" data-screen="summary-b">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Ringkasan Finansial</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:282px"><img class="pg-line" src="assets/line-7423.svg" width="268.773" height="3" alt=""></div>
+    <div class="summary-head">
+      <p class="summary-name">Frans Siskus,</p>
+      <div class="tiles">
+        <div class="tile"><span>Status</span><b>Mahasiswa</b></div>
+        <div class="tile"><span>Prioritas</span><b>Keuangan Seimbang</b></div>
+        <div class="tile"><span>Pendapatan</span><b><span>Rp 7.500.000</span><span>/ Bln</span></b></div>
+        <div class="tile"><span>Cicilan</span><b>Tidak Ada</b></div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero-top">
+        <span class="hero-label"><img src="assets/shield.svg" width="12" height="15" alt="">Aman dibelanjakan mingguan</span>
+        <span class="hero-pill">Mingguan</span>
+      </div>
+      <p class="hero-amount">Rp 525.000</p>
+      <div class="hero-bottom"><span>dari sekat <b>Gaya Hidup</b></span><span>Rp 75.000/hari</span></div>
+    </div>
+    <div class="ratio-card">
+      <div><p class="ratio-title">Keuangan Seimbang</p><p class="ratio-sub">Cicilan didahulukan agar lekas lega.</p></div>
+      <div class="bar">
+        <i style="left:0;width:216.6px;background:var(--seg-needs)"></i>
+        <i style="left:216.6px;width:72.2px;background:var(--seg-wants)"></i>
+        <i style="left:288.8px;width:72.2px;background:var(--seg-save)"></i>
+      </div>
+      <div class="bar-labels">
+        <div><b style="color:#1633a8">60%</b><span>Rp3.000.000</span></div>
+        <div><b style="color:#8a5a15">30%</b><span>Rp1.000.000</span></div>
+        <div><b style="color:#2f6b57">20%</b><span>Rp1.000.000</span></div>
+      </div>
+      <div class="breakdown">
+        <div class="bd-item"><i class="bd-dot" style="background:#2656ff"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#1633a8">Kebutuhan &amp; Pokok (60%)</span><span class="bd-amt">Rp 3.000.000</span></div><div class="bd-desc">Cicilan prioritas, belanja dapur, &amp; sewa</div></div></div>
+        <div class="bd-item"><i class="bd-dot" style="background:#d97706"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#bc6f03">Gaya Hidup (20%)</span><span class="bd-amt">Rp 1.000.000</span></div><div class="bd-desc">Ngopi santai, jajan harian, &amp; hiburan</div></div></div>
+        <div class="bd-item"><i class="bd-dot" style="background:#059669"></i><div class="bd-main"><div class="bd-row"><span class="bd-name" style="color:#065f46">Tabungan &amp; Investasi (20%)</span><span class="bd-amt" style="font-weight:700;color:#064e3b">Rp 1.000.000</span></div><div class="bd-desc">Dana darurat bertahap &amp; reksadana/emas</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     Teman Finansial — 797:3939 (cabang A) / 797:3875 (cabang B)
+     ====================================================== -->
+<section class="scr" data-screen="companion">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Teman Finansial</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:311px"><img class="pg-line" src="assets/line-8144.svg" width="294.557" height="3" alt=""></div>
+    <div class="hd">
+      <p class="hd-hello">Halo <span class="c-primary">Frans</span>,</p>
+      <p class="hd-q">Tentukan teman finansialmu</p>
+      <p class="hd-sub">Pilih teman finansial yang akan menemanimu membangun kesadaran finansial setiap hari.</p>
+    </div>
+    <div class="pets" role="radiogroup" aria-label="Teman finansial" data-group="pet">
+      <button class="pet" type="button" role="radio" aria-checked="false" data-value="kucing" aria-label="Kucing">
+        <div class="crop" style="width:83px;height:113.429px"><img src="assets/pets-cat-dog.png" alt="" style="height:162.58%;left:-148.83%;top:-26.67%;width:351.89%"></div>
+        <span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+      </button>
+      <button class="pet" type="button" role="radio" aria-checked="false" data-value="anjing" aria-label="Anjing">
+        <div class="crop" style="width:80px;height:111px"><img src="assets/pets-cat-dog.png" alt="" style="height:141.23%;left:-13.06%;top:-21.98%;width:351.89%"></div>
+        <span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+      </button>
+      <button class="pet" type="button" role="radio" aria-checked="false" data-value="kelinci" aria-label="Kelinci" style="padding-block:27.065px">
+        <div class="crop" style="width:84px;height:102px"><img src="assets/pet-rabbit.png" alt="" style="height:192.59%;left:-300.41%;top:-48.15%;width:421.4%"></div>
+        <span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+      </button>
+    </div>
+    <div class="field">
+      <p class="pet-name-label">Beri Nama Teman Finansialmu</p>
+      <label class="pet-name"><input type="text" id="petName" autocomplete="off" aria-label="Nama teman finansial"></label>
+      <div class="pet-note"><img src="assets/info-small.svg" width="8" height="10" alt="">Nama ini akan menemani catatan belanjamu setiap hari.</div>
+    </div>
+    <div class="insight">
+      <img src="assets/lightbulb.svg" width="12.5" height="18.6667" alt="">
+      <div>
+        <p class="insight-label">Instruksi</p>
+        <p class="insight-text">Catat Transaksi harianmu dibawah <b id="petLimit">Rp 50.000 </b>dan dapatkan aksesoris menarik untuk <b id="petNameEcho">Bucky</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     Tantangan Mingguan — 797:4003 (belum pilih) / 797:4178 (dipilih)
+     ====================================================== -->
+<section class="scr" data-screen="challenge">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Tantangan Mingguan</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:331px"><img class="pg-line" src="assets/line-8808.svg" width="318.357" height="3" alt=""></div>
+    <div class="field">
+      <p class="days-label">Daily Check-in</p>
+      <div class="days days--plan" id="days">
+        <div class="day"><b>Hari-1</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+        <div class="day"><b>Hari-2</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+        <div class="day"><b>Hari-3</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+        <div class="day"><b>Hari-4</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+        <div class="day"><b>Hari-5</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+        <div class="day"><b>Hari-6</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+        <div class="day"><b>Hari-7</b><i>✓</i><img src="assets/day-pending.svg" width="11" height="16" alt=""></div>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field-label" id="limitLabel">Pilih Batas Pengeluaran Harian</span>
+      <div class="limit-list" role="radiogroup" aria-labelledby="limitLabel" data-group="limit">
+        <div class="limit" role="radio" aria-checked="false" tabindex="0" data-value="75000">
+          <div class="limit-main"><span class="opt-title">Rp 75.000 (100%)</span><span class="opt-sub">Memaksimalkan ruang alokasi dana Gaya Hidup.</span></div>
+          <span class="radio-mark"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </div>
+        <div class="limit" role="radio" aria-checked="false" tabindex="0" data-value="50000">
+          <div class="limit-main">
+            <span class="opt-title">Rp 50.000 (66%)</span>
+            <span class="opt-sub">Memberi batasan pada pengeluaran harian sehingga lebih banyak dana tersisa untuk pos lainnya.</span>
+            <div class="limit-extra select-box">
+              <select id="leftover" class="is-placeholder" aria-label="Alokasikan sisa dana">
+                <option value="" disabled selected>Alokasikan sisa dana</option>
+                <option>Tabungan &amp; Investasi</option>
+                <option>Kebutuhan &amp; Pokok</option>
+              </select>
+              <img src="assets/caret-down.svg" width="24" height="24" alt="">
+            </div>
+          </div>
+          <span class="radio-mark"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </div>
+        <div class="limit" role="radio" aria-checked="false" tabindex="0" data-value="25000" style="margin-top:4px">
+          <div class="limit-main"><span class="opt-title">Rp 25.000 (33%)</span><span class="opt-sub limit-sub--justify">Fokus berhemat pada pengeluaran harian untuk dialokasikan ke kantong tabungan atau kebutuhan esensial.</span></div>
+          <span class="radio-mark"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </div>
+        <div class="limit" role="radio" aria-checked="false" tabindex="0" data-value="manual" style="margin-top:6px">
+          <div class="limit-main">
+            <span class="opt-title">Atur Manual</span>
+            <span class="opt-sub limit-sub--justify">Tentukan sendiri batas nominal belanja harian sesuai ritme keuanganmu.</span>
+            <span class="field-box"><input type="text" id="limitManual" inputmode="numeric" autocomplete="off" placeholder="Ex. 34.500" aria-label="Batas harian manual"></span>
+          </div>
+          <span class="radio-mark"><img src="assets/radio-empty.svg" width="20" height="20" alt=""><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Lanjut</button></div>
+</section>
+
+<!-- ======================================================
+     Buat PIN — 797:4286
+     ====================================================== -->
+<section class="scr scr--pin" data-screen="pin-create" data-tone="light">
+  <div class="sb sb--light" data-sb="light"></div>
+  <div class="pin-main">
+    <div class="appbar appbar--light">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left-light.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Sentuhan Terakhir!</h1>
+      <span class="appbar-spacer"></span>
+    </div>
+    <div class="pin-intro">
+      <div class="pin-badge"><img src="assets/lock.svg" width="18.6667" height="24.5" alt=""></div>
+      <p class="pin-title">Buat PIN Keamanan</p>
+      <p class="pin-text">PIN ini melindungi data keuanganmu setiap<br>kali membuka aplikasi.</p>
+      <div class="pin-dots" data-dots role="status" aria-label="0 dari 6 angka"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     Konfirmasi PIN — 797:4332
+     ====================================================== -->
+<section class="scr scr--pin" data-screen="pin-confirm" data-tone="light">
+  <div class="sb sb--light" data-sb="light"></div>
+  <div class="pin-main">
+    <div class="appbar appbar--light">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left-light.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Konfirmasi</h1>
+      <span class="appbar-spacer"></span>
+    </div>
+    <div class="pin-intro">
+      <div class="pin-badge"><img src="assets/lock.svg" width="18.6667" height="24.5" alt=""></div>
+      <p class="pin-title">Konfirmasi PIN Keamanan</p>
+      <p class="pin-text">PIN ini melindungi data keuanganmu setiap<br>kali membuka aplikasi.</p>
+      <div class="pin-dots" data-dots role="status" aria-label="0 dari 6 angka"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     Ready! — 797:4083
+     ====================================================== -->
+<section class="scr" data-screen="done">
+  <div class="sb" data-sb></div>
+  <div class="scr-body">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Ready!</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+    <div class="pg" style="--fill:100%"><img class="pg-line" src="assets/line-9529.svg" width="344.141" height="3" alt=""></div>
+    <div class="intro">
+      <p class="intro-title">Semua sudah dicatat!</p>
+      <div class="intro-art intro-art--ready"><img src="assets/bear-reading.png" alt="Beruang membaca buku di samping toples madu"></div>
+      <p class="intro-caption">Dashboard kamu udah disesuaikan berdasarkan jawaban tadi. Yuk mulai jaga kesadaran belanjamu bareng Safe.</p>
+    </div>
+  </div>
+  <div class="scr-foot"><button class="btn" type="button" data-next>Masuk ke Dashboard</button></div>
+</section>
+
+
+<!-- ======================================================
+     Dashboard — 797:1981 (kucing tidur) / 797:2244 (kucing bangun setelah mencatat)
+     ====================================================== -->
+<section class="scr scr--app scr--dash" data-screen="dash">
+  <div class="d-scroll">
+    <header class="d-hero">
+      <div class="sb sb--dash" data-sb="dash"></div>
+      <div class="d-greet">
+        <div class="d-greet-left">
+          <img src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+          <div class="d-hello"><span>Selamat Malam,</span><b>Fransiskus Brian</b></div>
+        </div>
+        <button class="d-bell" type="button" aria-label="Notifikasi"><img src="assets/icon-bell.svg" width="13.3333" height="16.6667" alt=""></button>
+      </div>
+      <div class="d-stage">
+        <div class="d-widget">
+          <div class="d-safe">
+            <span class="d-safe-label">Aman dibelanjakan hari ini</span>
+            <div class="d-safe-amount"><span>Rp</span><b>51.000</b></div>
+            <span class="d-safe-sub">sisa Rp 1.122.000 · 22 hari lagi</span>
+          </div>
+          <div class="d-zone">
+            <div class="d-ratio"><i style="flex:50 0 0;background:#bc6f03"></i><i style="flex:30 0 0;background:#4a74ff"></i><i style="flex:20 0 0;background:#208c19"></i></div>
+            <div class="d-legend">
+              <div><span><img src="assets/dot-needs.svg" width="8" height="8" alt="">Kebutuhan 50%</span><b>Rp 2,55jt</b></div>
+              <div><span><img src="assets/dot-wants.svg" width="8" height="8" alt="">Gaya Hidup 30%</span><b>Rp 1,53jt</b></div>
+              <div><span><img src="assets/dot-save.svg" width="8" height="8" alt="">Tabungan 20%</span><b>Rp 1,02jt</b></div>
+            </div>
+          </div>
+          <div class="d-total">
+            <span>Total saldo<button class="d-eye" type="button" id="eyeBtn" aria-label="Sembunyikan saldo" aria-pressed="false"><img src="assets/icon-eye.svg" width="16" height="16" alt=""></button></span>
+            <b id="saldo">Rp 5.356.063</b>
+          </div>
+        </div>
+        <div class="d-mascot" id="mascot" role="button" tabindex="0" data-push="lemari" aria-label="Buka lemari aksesoris maskot">
+          <div class="crop" style="width:153px;height:92px"><img src="assets/cat-sleep.png" alt="Kucing tidur di bantal" style="height:267.39%;left:-97.71%;top:-91.3%;width:294.77%"></div>
+          <img class="d-awake" src="assets/cat-awake.png" width="209" height="126" alt="Kucing bangun, duduk di samping bantal">
+        </div>
+      </div>
+    </header>
+
+    <div class="d-sheet">
+      <div class="d-pull"></div>
+      <button class="d-cta" type="button" data-push="tx"><img src="assets/icon-plus-circle.svg" width="20" height="20" alt="">Catat Transaksi</button>
+
+      <section class="d-tx">
+        <div class="d-section-head"><h2>Transaksi Terakhir</h2><button class="link-more" type="button" data-tab="riwayat">Lihat semua ›</button></div>
+        <div class="d-rail" id="txRail">
+          <div class="tx-card">
+            <span class="tx-badge" style="background:#edf1ff"><span class="ic-kopi"><i style="left:2.6px;top:4.4px;width:10.8px;height:10.8px;border-radius:.8px .8px 3.9px 3.9px;background:#4a74ff"></i><i style="left:13.1px;top:6.2px;width:3.3px;height:4.4px;border-radius:1.5px;background:#4a74ff"></i><i style="left:4.1px;top:5.9px;width:7.7px;height:1.5px;border-radius:.8px;background:#edf1ff"></i></span></span>
+            <span class="tx-name">Kopi pagi</span><span class="tx-meta">Gaya Hidup · 08:15</span><span class="tx-amt">−Rp 22.000</span>
+          </div>
+          <div class="tx-card">
+            <span class="tx-badge" style="background:#fbf0dc"><img src="assets/icon-bus.svg" width="18" height="18" alt=""></span>
+            <span class="tx-name">Transport kampus</span><span class="tx-meta">Kebutuhan · 07:40</span><span class="tx-amt">−Rp 12.000</span>
+          </div>
+          <div class="tx-card">
+            <span class="tx-badge" style="background:#e5f5e4"><img src="assets/icon-uang.svg" width="18" height="18" alt=""></span>
+            <span class="tx-name">Bonus proyek</span><span class="tx-meta">Pemasukan · kemarin</span><span class="tx-amt is-in">+Rp 2.500.000</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="d-section-head d-streak-head">
+        <div><h2 class="is-bold" style="font-weight:600">Streak Mencatat</h2><p>Milestone hari 3, 5, dan 7 • Reset tiap Senin</p></div>
+        <span class="chip-soft">Aktif hari ini</span>
+      </div>
+      <div class="streak">
+        <div class="streak-row"><span class="streak-week">Minggu ini</span><span class="streak-date">14–20 Sep</span></div>
+        <div class="streak-row streak-row--base"><span class="streak-count"><b>5</b><span>/ 7 hari</span></span><span class="streak-note">Sudah catat <b id="streakTx">3 transaksi</b></span></div>
+        <div class="streak-rail">
+          <i class="streak-track"></i>
+          <i class="streak-fill"></i>
+          <span class="streak-node" style="left:6px;top:6px;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#102478;filter:drop-shadow(0 3px 0 #060f3a)"><img src="assets/icon-flag.svg" width="14" height="14" alt="" style="position:static"></span>
+          <span class="streak-label" style="left:5.5px;font-size:9px;font-weight:700;letter-spacing:.72px;color:#102478">MULAI</span>
+          <span class="streak-label" style="left:98.83px">Hari 3</span>
+          <span class="streak-label" style="left:190.17px">Hari 5</span>
+          <span class="streak-label" style="left:281.5px;font-weight:600;color:#2656ff">Hari 7</span>
+          <span class="streak-node" style="left:91.33px;background:#173cbf;box-shadow:0 3px 0 #102478"><img src="assets/chest-open.png" alt="Peti hari 3 terbuka" style="left:7.67px;top:9px;width:28px;height:26px;object-fit:cover"></span>
+          <span class="streak-node" style="left:182.67px;background:#2656ff;filter:drop-shadow(0 3px 0 #102478)"><img src="assets/chest-open.png" alt="Peti hari 5 terbuka" style="left:8.33px;top:9px;width:28px;height:26px;object-fit:cover"></span>
+          <span class="streak-node" style="left:274px;display:grid;place-items:center;border:2px solid #2656ff;background:#fff"><span class="crop" style="width:23px;height:20px;transform:scaleX(-1)"><img src="assets/chest-sprite.png" alt="Peti hari 7" style="height:147.8%;left:-126.48%;top:-34.63%;width:233.79%"></span></span>
+        </div>
+        <div class="streak-foot"><span>Milestone berikutnya: <b>Hari 7</b></span><b>2 hari lagi</b></div>
+      </div>
+
+      <section class="d-block">
+        <div class="d-section-head"><h2 class="is-bold">Debt Tracker (Kewajiban Aktif)</h2><button class="link-more" type="button" data-push="debts">Lihat semua ›</button></div>
+        <div class="card-plain tap" role="button" tabindex="0" data-push="debts" aria-label="Buka Kewajiban Aktif">
+          <div class="debt-head"><div><span>Bebas dari cicilan</span><b>Maret 2027</b></div><span class="chip-sky">2 cicilan</span></div>
+          <div class="debt-facts"><b>6 bulan lagi</b><span>sisa Rp 3.200.000</span></div>
+          <div class="timeline">
+            <i class="timeline-rail"></i>
+            <img src="assets/marker-now.svg" width="11" height="11" alt="" style="left:2.5px;top:5px">
+            <span class="timeline-label" style="left:0"><b>Sep</b><span>sekarang</span></span>
+            <img src="assets/marker-now.svg" width="11" height="11" alt="" style="left:202.6px;top:5px">
+            <span class="timeline-label" style="left:193.6px"><b>Jan</b><span>Motor</span></span>
+            <img src="assets/marker-free.svg" width="22" height="22" alt="" style="left:297px;top:0">
+            <span class="timeline-label" style="left:277px"><b>Mar</b><span>Paylater</span></span>
+            <i style="left:304.6px;top:5.5px;width:1.6px;height:11px;background:#fff"></i>
+            <i style="left:306.2px;top:5.5px;width:6px;height:4.6px;border-radius:0 1px 1px 0;background:#fff"></i>
+          </div>
+          <div class="impact"><img src="assets/icon-clock-blue.svg" width="13" height="13" alt="">Belanja di luar rencana menunda Motor 6 hari</div>
+        </div>
+      </section>
+
+      <section class="d-block d-block--24">
+        <div class="d-section-head"><h2 class="is-bold">Goals Tracker (Target Impian)</h2><button class="link-more" type="button" data-tab="tantangan">Lihat semua ›</button></div>
+        <div class="alert-soft"><img src="assets/icon-info-alert.svg" width="11.25" height="17" alt=""><p style="margin:0">Kamu punya 2 cicilan aktif. Menambah target baru akan<br>menyesuaikan alokasi Gaya Hidup agar ritme<br>keuanganmu tetap seimbang tanpa tekanan.</p></div>
+        <div class="goals">
+          <div class="card-plain goal">
+            <div class="goal-head"><span><span class="goal-ico"><img src="assets/icon-goal-shield.svg" width="12" height="15" alt="" style="left:0;top:0"></span>Dana Darurat 3 Bulan</span><span class="chip-muted">Normal</span></div>
+            <div class="goal-bar"><i style="width:45%"></i></div>
+            <div class="goal-foot"><span>Rp 4.500.000 dari Rp 10.000.000</span><b>45%</b></div>
+          </div>
+          <div class="card-plain goal">
+            <div class="goal-head"><span><span class="goal-ico"><img src="assets/icon-goal-plane.svg" width="15.5096" height="13.6125" alt="" style="left:0;top:0"></span>Liburan Akhir Tahun</span><span class="chip-muted">Agresif</span></div>
+            <div class="goal-bar"><i style="width:40%"></i></div>
+            <div class="goal-foot"><span>Rp 1.200.000 dari Rp 3.000.000</span><b>40%</b></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <nav class="bnav" aria-label="Navigasi utama">
+    <button class="bnav-item is-active" type="button" data-tab="dash" aria-current="page"><img src="assets/nav-house-active.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item" type="button" data-tab="tantangan"><img src="assets/nav-scroll.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item" type="button" data-tab="riwayat"><img src="assets/nav-history.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item" type="button" data-tab="pengaturan"><img src="assets/nav-gear.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+</section>
+
+<!-- ======================================================
+     Catat Transaksi — Pengeluaran — 797:2507
+     ====================================================== -->
+<section class="scr scr--app" data-screen="tx">
+  <div class="sb sb--full" data-sb></div>
+  <div class="app-header">
+    <button class="back-circle" type="button" data-back aria-label="Kembali"><img src="assets/back-circle.svg" width="38" height="37" alt=""></button>
+    <h1>Catat Transaksi</h1>
+  </div>
+  <div class="app-body tx-body">
+    <div class="seg" role="radiogroup" aria-label="Jenis transaksi" data-group="txType">
+      <button type="button" role="radio" aria-checked="false" data-value="out">Pengeluaran</button>
+      <button type="button" role="radio" aria-checked="false" data-value="in">Pemasukan</button>
+    </div>
+    <label class="amount-card">
+      <span class="label-display">Nominal</span>
+      <span class="amount-row"><span>Rp</span><input id="txAmount" inputmode="numeric" autocomplete="off" placeholder="0" aria-label="Nominal"></span>
+    </label>
+    <div class="stack-10" id="txCats">
+      <p class="label-display">Kategori</p>
+      <div class="cat-grid" role="radiogroup" aria-label="Kategori" data-group="txCat">
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="makan" data-pocket="Kebutuhan" data-label="Makan harian">
+          <span class="cat-badge" style="background:#fbf0dc"><span class="ic14"><i style="left:.5px;top:5.2px;width:13px;height:1.7px;border-radius:.85px;background:#bc6f03"></i><i style="left:2px;top:7px;width:10px;height:5.2px;border-radius:.5px .5px 5px 5px;background:#bc6f03"></i><i style="left:4px;top:8.2px;width:6px;height:1px;border-radius:.5px;background:#fbf0dc"></i></span></span>Makan harian
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="transport" data-pocket="Kebutuhan" data-label="Transport">
+          <span class="cat-badge" style="background:#fbf0dc"><span class="ic14"><img src="assets/cat-transport.svg" width="14" height="14" alt=""></span></span>Transport
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="kos" data-pocket="Kebutuhan" data-label="Kos / Sewa">
+          <span class="cat-badge" style="background:#fbf0dc"><span class="ic14"><img src="assets/cat-kos.svg" width="14" height="14" alt=""></span></span>Kos / Sewa
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="tagihan" data-pocket="Kebutuhan" data-label="Tagihan">
+          <span class="cat-badge" style="background:#fbf0dc"><span class="ic14"><i style="left:2.2px;top:1.2px;width:9.6px;height:11.6px;border-radius:1.4px;background:#bc6f03"></i><i style="left:4px;top:4px;width:6px;height:1.2px;border-radius:.6px;background:#fbf0dc"></i><i style="left:4px;top:6.6px;width:6px;height:1.2px;border-radius:.6px;background:#fbf0dc"></i><i style="left:4px;top:9.2px;width:3.6px;height:1.2px;border-radius:.6px;background:#fbf0dc"></i></span></span>Tagihan
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="kesehatan" data-pocket="Kebutuhan" data-label="Kesehatan">
+          <span class="cat-badge" style="background:#fbf0dc"><span class="ic14"><i style="left:1.4px;top:1.4px;width:11.2px;height:11.2px;border-radius:3.4px;background:#bc6f03"></i><i style="left:6.2px;top:3.6px;width:1.6px;height:6.8px;border-radius:.8px;background:#fbf0dc"></i><i style="left:3.6px;top:6.2px;width:6.8px;height:1.6px;border-radius:.8px;background:#fbf0dc"></i></span></span>Kesehatan
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="cicilan" data-pocket="Kebutuhan" data-label="Cicilan">
+          <span class="cat-badge" style="background:#fbf0dc"><span class="ic14"><i style="left:.8px;top:3px;width:12.4px;height:8px;border-radius:1.6px;background:#bc6f03"></i><i style="left:.8px;top:5.2px;width:12.4px;height:1.8px;background:#fbf0dc"></i><i style="left:2.4px;top:8.4px;width:3.6px;height:1.2px;border-radius:.6px;background:#fbf0dc"></i></span></span>Cicilan
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="jajan" data-pocket="Gaya Hidup" data-label="Jajan &amp; Kopi">
+          <span class="cat-badge" style="background:#edf1ff"><span class="ic14"><i style="left:2px;top:3.4px;width:8.4px;height:8.4px;border-radius:.6px .6px 3px 3px;background:#4a74ff"></i><i style="left:10.2px;top:4.8px;width:2.6px;height:3.4px;border-radius:1.2px;background:#4a74ff"></i><i style="left:3.2px;top:4.6px;width:6px;height:1.2px;border-radius:.6px;background:#edf1ff"></i></span></span>Jajan &amp; Kopi
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="nongkrong" data-pocket="Gaya Hidup" data-label="Nongkrong &amp; Hiburan">
+          <span class="cat-badge" style="background:#edf1ff"><span class="ic14"><img src="assets/cat-nongkrong.svg" width="14" height="14" alt=""></span></span>Nongkrong &amp; Hiburan
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="belanja" data-pocket="Gaya Hidup" data-label="Belanja">
+          <span class="cat-badge" style="background:#edf1ff"><span class="ic14"><i style="left:1.2px;top:3.4px;width:11.6px;height:9.4px;border-radius:1.4px;background:#4a74ff"></i><i style="left:6.3px;top:3.4px;width:1.4px;height:9.4px;background:#edf1ff"></i><i style="left:1.2px;top:6.4px;width:11.6px;height:1.4px;background:#edf1ff"></i></span></span>Belanja
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="perawatan" data-pocket="Gaya Hidup" data-label="Perawatan Diri">
+          <span class="cat-badge" style="background:#edf1ff"><span class="ic14"><img src="assets/cat-perawatan.svg" width="14" height="14" alt=""></span></span>Perawatan Diri
+        </button>
+        <button class="cat-chip" type="button" role="radio" aria-checked="false" data-value="goals" data-pocket="Tabungan" data-label="Setor ke Goals">
+          <span class="cat-badge" style="background:#e5f5e4"><span class="ic14"><img src="assets/cat-goals.svg" width="14" height="14" alt=""></span></span>Setor ke Goals
+        </button>
+      </div>
+    </div>
+    <div class="stack-10">
+      <p class="label-display">Masuk kantong</p>
+      <div class="field-lg">
+        <span class="pocket"><img id="pocketDot" src="assets/dot-kantong.svg" width="8" height="8" alt=""><span id="pocketName">Gaya Hidup</span></span>
+        <span class="pill-btn">Ubah<select id="pocketSelect" aria-label="Ubah kantong"><option>Kebutuhan</option><option>Gaya Hidup</option><option>Tabungan</option></select></span>
+      </div>
+    </div>
+    <div class="stack-10">
+      <p class="label-display">Catatan (opsional)</p>
+      <label class="field-lg"><input id="txNote" autocomplete="off" aria-label="Catatan"></label>
+    </div>
+  </div>
+  <div class="app-foot"><button class="btn" type="button" id="txSave">Simpan</button></div>
+</section>
+
+<!-- ======================================================
+     Kewajiban Aktif — Jalur Pelunasan — 797:2623
+     ====================================================== -->
+<section class="scr scr--app" data-screen="debts">
+  <div style="padding:12px 20px 0"><div class="sb" data-sb style="width:100%"></div></div>
+  <div class="app-nav">
+    <button class="back-28" type="button" data-back aria-label="Kembali"><img src="assets/back-28.svg" width="28" height="28" alt=""></button>
+    <h1>Kewajiban Aktif</h1>
+  </div>
+  <div class="app-body debts-body">
+    <div class="total-debt">
+      <span>Sisa semua kewajiban</span>
+      <b>Rp 3.200.000</b>
+      <small>dari Rp 7.800.000</small>
+      <div class="bar-thin"><i style="width:59%"></i></div>
+    </div>
+    <div class="motor-card tap" role="button" tabindex="0" data-push="motor" aria-label="Buka detail Cicilan Motor">
+      <span class="motor-title">Cicilan Motor</span>
+      <span class="motor-left"><b>Rp 1.400.000</b><span>tersisa</span></span>
+      <span class="motor-sub">Rp 350.000 tiap bulan</span>
+      <div class="cal">
+        <i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-next"></i><i></i><i></i><i></i>
+        <span class="cal-chest"><img src="assets/chest.svg" width="17.4545" height="14.1818" alt="Peti lunas"></span>
+      </div>
+      <div class="row-split motor-foot"><span>4 pembayaran lagi</span><b>Lunas 20 Jan</b></div>
+    </div>
+    <div class="reward">
+      <p>Begitu lunas, Rp 350.000 tiap bulan balik ke kantongmu.</p>
+      <div class="crop" style="width:78px;height:46.902px"><img src="assets/cat-sleep.png" alt="" style="height:267.39%;left:-97.71%;top:-91.3%;width:294.77%"></div>
+    </div>
+    <div class="paylater">
+      <div class="row-split paylater-title"><span>Paylater Gadget</span><b>Rp 1.800.000</b></div>
+      <div class="cal-mini">
+        <i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-paid"></i><i class="is-next"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <small>Lunas 23 Mar</small>
+    </div>
+    <div class="note-warn"><img src="assets/icon-clock-warning.svg" width="11.667" height="11.667" alt="">Belanja impulsif hari ini bikin kamu mundur 6 hari.</div>
+    <button class="d-cta" type="button" data-push="sim" style="margin-top:0">Simulasikan cicilan baru</button>
+  </div>
+  <nav class="bnav2" aria-label="Navigasi utama">
+    <button class="bnav2-item is-active" type="button" data-tab="dash" aria-current="page"><span class="bnav2-ico"><img src="assets/nav2-home.svg" width="12" height="13.5" alt=""></span>Beranda</button>
+    <button class="bnav2-item" type="button" data-tab="tantangan"><span class="bnav2-ico"><img src="assets/nav2-target.svg" width="16.6667" height="16.6667" alt=""></span>Tantangan</button>
+    <button class="bnav2-item" type="button" data-tab="riwayat"><span class="bnav2-ico"><img src="assets/nav2-clock.svg" width="16.6667" height="16.6667" alt=""></span>Riwayat</button>
+    <button class="bnav2-item" type="button" data-tab="pengaturan"><span class="bnav2-ico"><img src="assets/nav2-gear.svg" width="16.75" height="16.6667" alt=""></span>Pengaturan</button>
+  </nav>
+</section>
+
+<!-- ======================================================
+     Detail Cicilan Motor — 797:2835
+     ====================================================== -->
+<section class="scr scr--app" data-screen="motor">
+  <div class="sb sb--full" data-sb></div>
+  <div class="app-nav">
+    <button class="back-28" type="button" data-back aria-label="Kembali"><img src="assets/back-28.svg" width="28" height="28" alt=""></button>
+    <h1>Kewajiban Aktif</h1>
+  </div>
+  <div class="app-body motor-body">
+    <div class="balance">
+      <div class="row-split"><span class="balance-label">Sisa cicilan</span><span class="badge-reward"><img src="assets/dot-reward.svg" width="7" height="7" alt="">Paling dekat lunas</span></div>
+      <span class="balance-amount">Rp 1.400.000</span>
+      <div class="row-split balance-facts"><span>Rp 350.000 tiap bulan</span><b>4 pembayaran lagi</b></div>
+      <div class="bar-8"><i style="width:67.5%"></i></div>
+    </div>
+    <div class="next-pay">
+      <div class="row-split"><h3>Pembayaran berikutnya</h3><span class="badge-tight"><img src="assets/dot-tight.svg" width="4.85883" height="4.85883" alt="">Tight</span></div>
+      <div class="row-split"><b>Rp 350.000</b><span>20 Nov</span></div>
+      <p>Catat bulan ini supaya jalur lunasmu tetap mulus.</p>
+    </div>
+    <div class="card-16 payoff">
+      <div class="row-split"><h3>Jalur menuju peti</h3><span class="payoff-when">Lunas 20 Jan</span></div>
+      <div class="row-split">
+        <span class="pdots"><img src="assets/pdot-on.svg" width="17.0504" height="17.0504" alt=""><img src="assets/pdot-on.svg" width="17.0504" height="17.0504" alt=""><img src="assets/pdot-on.svg" width="17.0504" height="17.0504" alt=""><img src="assets/pdot-on.svg" width="17.0504" height="17.0504" alt=""><img src="assets/pdot-off.svg" width="17.0504" height="17.0504" alt=""><img src="assets/pdot-off.svg" width="17.0504" height="17.0504" alt=""><img src="assets/pdot-off.svg" width="17.0504" height="17.0504" alt=""></span>
+        <span class="payoff-chest" role="img" aria-label="Peti">🎁</span>
+      </div>
+      <p>Buka peti terakhir — lalu Rp 350.000 tiap bulan balik ke kantongmu.</p>
+    </div>
+    <div class="card-16">
+      <div class="schedule-head"><h3>Riwayat &amp; jadwal</h3><span>4 bulan terakhir</span></div>
+      <div class="schedule-row"><img src="assets/state-done.svg" width="9" height="9" alt=""><b>Okt</b><span>20 Okt</span><em style="color:#204a3c">Lunas</em></div>
+      <div class="schedule-row"><img src="assets/state-next.svg" width="9" height="9" alt=""><b>Nov</b><span>20 Nov</span><em style="color:#1b43d9">Berikutnya</em></div>
+      <div class="schedule-row"><img src="assets/state-later.svg" width="9" height="9" alt=""><b>Des</b><span>20 Des</span><em style="color:#6b7178">Terjadwal</em></div>
+      <div class="schedule-row"><img src="assets/state-later.svg" width="9" height="9" alt=""><b>Jan</b><span>20 Jan</span><em style="color:#6b7178">Peti terbuka</em></div>
+    </div>
+  </div>
+  <div class="motor-action"><button class="btn" type="button" data-save="debts">Catat pembayaran bulan ini</button></div>
+  <nav class="bnav bnav--static" aria-label="Navigasi utama">
+    <button class="bnav-item is-active" type="button" data-tab="dash" aria-current="page"><img src="assets/nav-house-active.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item" type="button" data-tab="tantangan"><img src="assets/nav-scroll.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item" type="button" data-tab="riwayat"><img src="assets/nav-history.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item" type="button" data-tab="pengaturan"><img src="assets/nav-gear.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+</section>
+
+<!-- ======================================================
+     Simulasi cicilan baru — 797:2749
+     ====================================================== -->
+<section class="scr scr--app" data-screen="sim">
+  <div class="sb sb--full" data-sb style="padding:0 16px"></div>
+  <div class="app-header">
+    <button class="back-circle" type="button" data-back aria-label="Kembali"><img src="assets/back-circle.svg" width="38" height="37" alt=""></button>
+    <h1 style="font-size:17px;font-weight:600">Simulasi cicilan baru</h1>
+  </div>
+  <div class="app-body sim-body">
+    <div class="stack-10">
+      <p class="sim-label">Total Cicilan</p>
+      <div>
+        <label class="sim-total"><span class="amount-row amount-row--36"><span>Rp</span><input id="simTotal" inputmode="numeric" autocomplete="off" placeholder="0" aria-label="Total cicilan"></span></label>
+        <p class="sim-hint">*Sudah termasuk biaya admin dan bunga</p>
+      </div>
+    </div>
+    <div class="stack-10">
+      <p class="sim-label">Tenor Cicilan</p>
+      <div class="tenor" role="radiogroup" aria-label="Tenor cicilan" data-group="simTenor">
+        <button type="button" role="radio" aria-checked="false" data-value="3">3 bulan</button>
+        <button type="button" role="radio" aria-checked="false" data-value="6">6 bulan</button>
+        <button type="button" role="radio" aria-checked="false" data-value="12">12 bulan</button>
+        <button type="button" role="radio" aria-checked="false" data-value="24">24 bulan</button>
+      </div>
+    </div>
+    <div class="tint-card monthly"><div><span>Cicilan bulanan</span><small id="simTenorLabel">12 bulan</small></div><b id="simMonthly">Rp 250.000</b></div>
+    <div class="stack-10">
+      <p class="sim-label">Rasio Kantongmu</p>
+      <div class="tint-card verdict"><b id="simVerdict">Ketat, tapi masih muat</b><span id="simVerdictSub">Rp 250.000/bulan selama 12 bulan</span></div>
+      <div class="compare">
+        <div class="compare-row"><span>Sebelum</span><div class="compare-bar"><i style="flex:500 0 0;background:#bc6f03"></i><i style="flex:300 0 0;background:#4a74ff"></i><i style="flex:200 0 0;background:#208c19"></i></div></div>
+        <div class="compare-row"><span>Sesudah</span><div class="compare-bar" id="simAfter"><i style="flex:549 0 0;background:#bc6f03"></i><i style="flex:251 0 0;background:#4a74ff"></i><i style="flex:200 0 0;background:#208c19"></i></div></div>
+        <hr>
+        <div class="delta"><span>Gaya Hidup</span><span>30%<span>→</span><b id="simWants">25,1%</b></span></div>
+        <div class="delta"><span>Jatah harian</span><span>Rp 51.000<span>→</span><b id="simDaily">Rp 42.667</b></span></div>
+      </div>
+    </div>
+    <div class="stack-10">
+      <p class="label-display">Bebas dari cicilan</p>
+      <div class="finish"><span>Maret 2027<span>→</span><b id="simEnd">September 2027</b></span><span class="chip-warn" id="simShift">+6 bln</span></div>
+    </div>
+  </div>
+  <div class="sim-foot"><button class="btn" type="button" data-save="debts">Simpan Jadi Cicilan</button></div>
+</section>
+
+
+<!-- ======================================================
+     Tab Tantangan — 797:4846 (dengan banner Ringkasan Minggu ini)
+     Modal pencapaian 797:5162 · Sheet Target Baru 797:5512 · Kalender streak 797:5313
+     ====================================================== -->
+<section class="scr scr--app" data-screen="tantangan">
+  <div style="padding:0 16px"><div class="sb" data-sb></div></div>
+  <div class="app-body t-body">
+    <div class="t-streak">
+      <div class="t-head"><h2>Catatan Streak</h2><button class="link-more" type="button" data-open="calSheet">Lihat semua ›</button></div>
+      <div class="t-week" id="tWeek">
+        <div class="t-day is-done"><span>S</span><b>21</b></div>
+        <div class="t-day is-today" id="tToday"><span>S</span><b>22</b></div>
+        <div class="t-day"><span>R</span><b>23</b></div>
+        <div class="t-day"><span>K</span><b>24</b></div>
+        <div class="t-day"><span>J</span><b>25</b></div>
+        <div class="t-day"><span>S</span><b>26</b></div>
+        <div class="t-day"><span>M</span><b>27</b></div>
+      </div>
+      <button class="btn-sm" type="button" data-push="tx">Catat Transaksi Hari ini</button>
+    </div>
+
+    <button class="t-banner tap" type="button" id="tBanner" data-push="peti">
+      <span class="t-banner-spacer"></span>
+      <span class="t-banner-text"><b>Ringkasan Minggu ini!</b><span>Lihat ringkasan minggu ini dan dapatkan hadiahnya!</span></span>
+      <span class="crop chest-54"><img src="assets/chest-sprite.png" alt="" style="height:147.8%;left:-126.48%;top:-34.63%;width:233.79%"></span>
+      <img class="t-bear" src="assets/bear-peek.png" width="129" height="70" alt="">
+    </button>
+
+    <div class="t-section">
+      <div class="t-head"><h2 class="is-sm">Tantangan Spesial</h2></div>
+      <div class="t-section" id="goalList">
+        <div class="goal-card">
+          <div class="goal-card-row">
+            <div class="goal-card-main">
+              <span class="goal-card-name">Beli Iphone Baru</span>
+              <span class="goal-card-amt"><b>Rp 6.000.000</b><span>/ 7.400.000</span></span>
+              <div class="goal-card-bar"><i style="width:195px"></i></div>
+            </div>
+            <span class="goal-card-chest"><span class="crop chest-54"><img src="assets/chest-sprite.png" alt="" style="height:147.8%;left:-126.48%;top:-34.63%;width:233.79%"></span></span>
+          </div>
+          <div class="goal-card-foot"><span>Angsuran :<b> Rp 250.000 </b>/ Minggu</span><em>Tercapai : 6 November 2026</em></div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-card-row">
+            <div class="goal-card-main">
+              <span class="goal-card-name">Target Beli Kamera</span>
+              <span class="goal-card-amt"><b>Rp 3.400.000</b><span>/ 4.700.000</span></span>
+              <div class="goal-card-bar"><i style="width:195px"></i></div>
+            </div>
+            <span class="goal-card-chest"><span class="crop chest-54"><img src="assets/chest-sprite.png" alt="" style="height:147.8%;left:-126.48%;top:-34.63%;width:233.79%"></span></span>
+          </div>
+          <div class="goal-card-foot"><span>Angsuran :<b> Rp 100.000 </b>/ Minggu</span><em>Tercapai : 25 Desember 2026</em></div>
+        </div>
+        <button class="btn-dashed" type="button" id="addGoal" data-open="targetSheet">+ Tambah Tantangan Baru</button>
+      </div>
+    </div>
+
+    <div class="t-section">
+      <div class="t-head"><h2 class="is-sm">Pencapaian</h2><button class="link-more" type="button" data-push="pencapaian">Lihat semua ›</button></div>
+      <div class="badges" id="badgeGrid"></div>
+    </div>
+  </div>
+
+  <nav class="bnav" aria-label="Navigasi utama">
+    <button class="bnav-item" type="button" data-tab="dash"><img src="assets/nav-house.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item is-active" type="button" data-tab="tantangan" aria-current="page"><img src="assets/nav-scroll-active.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item" type="button" data-tab="riwayat"><img src="assets/nav-history.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item" type="button" data-tab="pengaturan"><img src="assets/nav-gear.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+
+  <!-- Modal pencapaian (797:5302) -->
+  <div class="layer" id="badgeModal" role="dialog" aria-modal="true" aria-label="Detail pencapaian">
+    <div class="scrim" data-close></div>
+    <div class="modal">
+      <button class="modal-x" type="button" data-close aria-label="Tutup"><img src="assets/icon-x.svg" width="24.3379" height="24.3379" alt=""></button>
+      <div id="badgeModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Sheet Target Baru (797:5585) -->
+  <div class="layer" id="targetSheet" role="dialog" aria-modal="true" aria-label="Target baru">
+    <div class="scrim" data-close></div>
+    <div class="sheet sheet-target">
+      <h3>Target Baru</h3>
+      <div class="stack-10" style="gap:12px">
+        <label class="tf"><span>Nama Target</span><span class="tf-box"><input id="goalName" autocomplete="off" placeholder="Contoh: Beli Laptop"></span></label>
+        <label class="tf"><span>Jumlah Target</span><span class="tf-box"><span class="tf-rp">Rp </span><input id="goalAmount" inputmode="numeric" autocomplete="off" aria-label="Jumlah target"></span></label>
+        <label class="tf"><span>Tenggat Waktu</span><span class="tf-box"><span class="tf-date" id="goalDateText">Pilih Tanggal</span><img src="assets/icon-calendar.svg" width="16" height="16" alt=""><input type="date" id="goalDate" min="2026-09-26" aria-label="Tenggat waktu"></span></label>
+      </div>
+      <div class="budget">
+        <div class="row-split"><span style="font-weight:500">Budget tersedia</span><span>Estimasi tercapai</span></div>
+        <div class="row-split"><span class="budget-amt">Rp 750.000 / bln</span><span class="budget-est"><img src="assets/icon-calendar-sm.svg" width="12" height="12" alt=""><span id="goalEstimate">-</span></span></div>
+        <span>Rekomendasi sistem: Rp 200.000/bln</span>
+      </div>
+      <button class="btn" type="button" id="goalSave" style="font-size:18px">Simpan Target</button>
+      <div class="numpad" id="goalPad" aria-label="Keypad angka">
+        <button type="button" data-num="1">1</button><button type="button" data-num="2">2</button><button type="button" data-num="3">3</button>
+        <button type="button" data-num="4">4</button><button type="button" data-num="5">5</button><button type="button" data-num="6">6</button>
+        <button type="button" data-num="7">7</button><button type="button" data-num="8">8</button><button type="button" data-num="9">9</button>
+        <button type="button" class="is-muted" data-num=".">.</button><button type="button" data-num="0">0</button><button type="button" class="is-muted" data-num="del" aria-label="Hapus"><img src="assets/icon-delete.svg" width="18" height="18" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kalender streak (797:5386) -->
+  <div class="layer" id="calSheet" role="dialog" aria-modal="true" aria-label="Kalender streak">
+    <div class="scrim" data-close></div>
+    <div class="sheet sheet-cal">
+      <div class="cal-head">
+        <button type="button" aria-label="Bulan sebelumnya"><img src="assets/chev-left.svg" width="17.2514" height="17.2514" alt=""></button>
+        <span>September 2026</span>
+        <button type="button" aria-label="Bulan berikutnya"><img src="assets/chev-right.svg" width="17.2514" height="17.2514" alt=""></button>
+      </div>
+      <div class="cal-stats">
+        <div><span>Jumlah Streakmu</span><b id="calStreak">1 Hari</b></div>
+        <div><span>Streak Minggu ini</span><b id="calWeek">1</b></div>
+      </div>
+      <div>
+        <div class="cal-dow"><span>S</span><span>S</span><span>R</span><span>K</span><span>J</span><span>S</span><span>M</span></div>
+        <div class="cal-grid" id="calGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     Pencapaian — 797:5720
+     ====================================================== -->
+<section class="scr scr--app" data-screen="pencapaian" style="background:#fff">
+  <div class="sb sb--full" data-sb style="padding:0 16px"></div>
+  <div class="ach-header">
+    <button class="back-circle" type="button" data-back aria-label="Kembali"><img src="assets/back-circle.svg" width="38" height="37" alt=""></button>
+    <h1>Pencapaian</h1>
+  </div>
+  <div class="app-body ach-body">
+    <div class="badges badges--lg" id="badgeGridAll"></div>
+  </div>
+</section>
+
+<!-- ======================================================
+     Rekap Pekanan — 827:11244
+     ====================================================== -->
+<section class="scr scr--app" data-screen="rekap">
+  <div class="sb sb--full" data-sb></div>
+  <div class="rekap-header">
+    <button class="back-circle" type="button" data-back aria-label="Kembali"><img src="assets/back-circle.svg" width="38" height="37" alt=""></button>
+    <h1>Rekap Pekanan</h1>
+  </div>
+  <div class="app-body rekap-body">
+    <div class="streak">
+      <div class="streak-row"><span class="streak-week">Minggu ini</span><span class="streak-date">14–20 Sep</span></div>
+      <div class="streak-row streak-row--base"><span class="streak-count"><b>5</b><span>/ 7 hari</span></span><span class="streak-note">Sudah catat <b>3 transaksi</b></span></div>
+      <div class="streak-rail">
+        <i class="streak-track"></i>
+        <i class="streak-fill"></i>
+        <span class="streak-node" style="left:6px;top:6px;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#102478;filter:drop-shadow(0 3px 0 #060f3a)"><img src="assets/icon-flag.svg" width="14" height="14" alt="" style="position:static"></span>
+        <span class="streak-label" style="left:5.5px;font-size:9px;font-weight:700;letter-spacing:.72px;color:#102478">MULAI</span>
+        <span class="streak-label" style="left:98.83px">Hari 3</span>
+        <span class="streak-label" style="left:190.17px">Hari 5</span>
+        <span class="streak-label" style="left:281.5px;font-weight:600;color:#2656ff">Hari 7</span>
+        <span class="streak-node" style="left:91.33px;background:#2656ff;filter:drop-shadow(0 3px 0 #102478)"><img src="assets/chest-open.png" alt="Peti hari 3 terbuka" style="left:8.33px;top:9px;width:28px;height:26px;object-fit:cover"></span>
+        <span class="streak-node" style="left:182.67px;background:#2656ff;filter:drop-shadow(0 3px 0 #102478)"><img src="assets/chest-open.png" alt="Peti hari 5 terbuka" style="left:8.33px;top:9px;width:28px;height:26px;object-fit:cover"></span>
+        <span class="streak-node" style="left:274px;display:grid;place-items:center;border:2px solid #2656ff;background:#fff"><span class="crop" style="width:23px;height:20px;transform:scaleX(-1)"><img src="assets/chest-sprite.png" alt="Peti hari 7" style="height:147.8%;left:-126.48%;top:-34.63%;width:233.79%"></span></span>
+      </div>
+      <div class="streak-foot"><span>Milestone berikutnya: <b>Hari 7</b></span></div>
+    </div>
+
+    <div>
+      <div class="struk-edge"></div>
+      <div class="struk">
+        <span class="struk-cap caption">Rekap Resmi</span>
+        <h2>Ringkasan Arus Kas</h2>
+        <span class="struk-period">Periode 16 – 22 Maret 2026</span>
+        <span class="caption">Diterbitkan Minggu, 22 Mar · 20:00 WIB</span>
+        <hr>
+        <div class="struk-boxes">
+          <div class="struk-box" style="background:#e5f5e4;color:#146310"><span class="caption" style="color:inherit">Total Pemasukan</span><b>+Rp 9.650.000</b></div>
+          <div class="struk-box" style="background:#ededeb"><span class="caption">Total Pengeluaran</span><b>−Rp 607.990</b></div>
+        </div>
+        <div class="struk-surplus"><span class="caption" style="color:inherit">Surplus Bersih Pekanan</span><b>+Rp 9.042.010</b></div>
+        <hr>
+      </div>
+    </div>
+
+    <div class="card-20">
+      <div style="display:flex;flex-direction:column;gap:3px"><h3>Pengeluaran 7 Hari Terakhir</h3><span class="caption">16 – 22 Maret 2026</span></div>
+      <div class="reading">
+        <div><span class="caption">Rabu, 18 Maret 2026</span><b class="num" style="color:#146310">−Rp 185.000</b></div>
+        <span class="pill-blue">30% pekan ini</span>
+      </div>
+      <div class="chart">
+        <img class="chart-avg" src="assets/rekap-avg-line.svg" width="313" height="1" alt="">
+        <div class="chart-day"><i style="height:126px"></i><span class="caption">Senin</span></div>
+        <div class="chart-day"><i style="height:42px"></i><span class="caption">Selasa</span></div>
+        <div class="chart-day"><span class="is-picked" style="height:82px"><i></i></span><span class="caption" style="color:#1633a8">Rabu</span></div>
+        <div class="chart-day"><i style="height:65px"></i><span class="caption">Kamis</span></div>
+        <div class="chart-day"><i style="height:131px"></i><span class="caption">Jumat</span></div>
+        <div class="chart-day"><i style="height:150px"></i><span class="caption">Sabtu</span></div>
+        <div class="chart-day"><i style="height:71px"></i><span class="caption">Minggu</span></div>
+      </div>
+    </div>
+
+    <div class="reflect">
+      <img src="assets/icon-clock-green.svg" width="18" height="18" alt="">
+      <div><b>Dampak ke Tujuanmu</b><p>Pengeluaran harian melampaui alokasi di 3 dari 7 hari. Bila selisihnya diambil dari pocket <strong>Tabungan dan Investasi</strong>, Target Beli Iphone Baru berpotensi mundur 6 hari.</p></div>
+    </div>
+
+    <div class="card-20 top3">
+      <h3>3 Pengeluaran Terbesar</h3>
+      <div>
+        <div class="top3-row">
+          <span class="tx-badge" style="background:#fbf0dc"><span class="ic-kopi"><i style="left:.64px;top:6.69px;width:16.714px;height:2.186px;border-radius:1.093px;background:#bc6f03"></i><i style="left:2.57px;top:9px;width:12.857px;height:6.686px;border-radius:.643px .643px 6.429px 6.429px;background:#bc6f03"></i><i style="left:5.14px;top:10.54px;width:7.714px;height:1.286px;border-radius:.643px;background:#fbf0dc"></i></span></span>
+          <span>Belanja Supermarket</span><b class="num">Rp 450.000</b>
+        </div>
+        <div class="top3-row">
+          <span class="tx-badge" style="background:#fbf0dc"><img src="assets/icon-bus.svg" width="18" height="18" alt=""></span>
+          <span>Isi Bensin Motor</span><b class="num">Rp 150.000</b>
+        </div>
+        <div class="top3-row">
+          <span class="tx-badge" style="background:#edf1ff"><img src="assets/icon-nongkrong-18.svg" width="18" height="18" alt=""></span>
+          <span>Nonton Bioskop</span><b class="num">Rp 120.000</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-20">
+      <div class="row-split"><h3>Pengeluaran per Kategori</h3><span class="caption">Total 100%</span></div>
+      <div class="stacked"><i style="width:181px;background:#1633a8"></i><i style="width:62px;background:#4a74ff"></i><i style="width:86px;background:#2f6b57"></i></div>
+      <div class="legend-rows">
+        <div class="row-split"><span><img src="assets/dot-cat-1.svg" width="8" height="8" alt="">Makan harian (55%)</span><b class="num">Rp 500.000</b></div>
+        <div class="row-split"><span><img src="assets/dot-cat-2.svg" width="8" height="8" alt="">Transport (19%)</span><b class="num">Rp 168.000</b></div>
+        <div class="row-split"><span><img src="assets/dot-cat-3.svg" width="8" height="8" alt="">Nongkrong &amp; Hiburan (26%)</span><b class="num">Rp 156.990</b></div>
+      </div>
+    </div>
+
+    <div class="stack-10" style="padding-top:4px">
+      <button class="btn" type="button">Simpan &amp; Bagikan Rekap</button>
+      <button class="btn btn-muted" type="button" data-tab="dash">Kembali ke Beranda</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     Tab Riwayat — 797:5869 (daftar) / 797:5975 (filter aktif) / 797:6024 (tidak ada yang cocok)
+     Sheet: Jenis 797:6176 · Tanggal 797:6327 · Kategori 797:6664 · Kantong 797:6509
+     ====================================================== -->
+<section class="scr scr--app" data-screen="riwayat">
+  <div class="sb sb--full" data-sb></div>
+  <div class="rekap-header" style="min-height:57px">
+    <h1>Riwayat</h1>
+  </div>
+  <div class="rw-filter">
+    <div class="rw-pills" id="rwPills"></div>
+    <div class="rw-summary" id="rwSummary" hidden>
+      <span class="caption" id="rwCount">0 transaksi cocok</span>
+      <button class="link-more" type="button" data-rw-reset>Hapus semua</button>
+    </div>
+  </div>
+  <div class="app-body rw-body" id="rwList"></div>
+
+  <nav class="bnav" aria-label="Navigasi utama">
+    <button class="bnav-item" type="button" data-tab="dash"><img src="assets/nav-house.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item" type="button" data-tab="tantangan"><img src="assets/nav-scroll.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item is-active" type="button" data-tab="riwayat" aria-current="page"><img src="assets/nav-history-active.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item" type="button" data-tab="pengaturan"><img src="assets/nav-gear.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+
+  <!-- Sheet Jenis Transaksi -->
+  <div class="layer" id="rwSheetJenis" role="dialog" aria-modal="true" aria-label="Jenis transaksi">
+    <div class="scrim" data-close></div>
+    <div class="sheet sheet-rw">
+      <div class="sheet-handle"><i></i></div>
+      <div class="sheet-head"><h3>Jenis Transaksi</h3><button class="btn-clear" type="button" data-rw-clear="dJenis">Hapus</button></div>
+      <div class="sheet-opts" role="radiogroup" data-group="dJenis">
+        <button class="rw-opt" type="button" role="radio" aria-checked="false" data-value="in">
+          <span class="rw-opt-badge" style="background:#e5f5e4;color:#208c19">↓</span>
+          <span class="rw-opt-text"><b>Pemasukan</b></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <button class="rw-opt" type="button" role="radio" aria-checked="false" data-value="out">
+          <span class="rw-opt-badge" style="color:#45484d">↑</span>
+          <span class="rw-opt-text"><b>Pengeluaran</b></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+      </div>
+      <div class="sheet-foot"><button class="btn" type="button" data-rw-apply>Pasang filter</button></div>
+    </div>
+  </div>
+
+  <!-- Sheet Tanggal (versi Frans) -->
+  <div class="layer" id="rwSheetTanggal" role="dialog" aria-modal="true" aria-label="Pilih tanggal transaksi">
+    <div class="scrim" data-close></div>
+    <div class="sheet sheet-date">
+      <div class="drag"><i></i></div>
+      <div class="sheet-head"><h3>Pilih Tanggal Transaksi</h3><button class="btn-clear" type="button" data-rw-clear="dTanggal">Hapus</button></div>
+      <div class="date-opts" role="radiogroup" data-group="dTanggal">
+        <button class="date-opt" type="button" role="radio" aria-checked="false" data-value="7">
+          <span><b>7 hari terakhir</b><small>17 September 2026 - 23 September 2026</small></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <img class="date-sep" src="assets/date-sep.svg" width="368" height="0.5" alt="">
+        <button class="date-opt" type="button" role="radio" aria-checked="false" data-value="30">
+          <span><b>30 hari terakhir</b><small>25 Agustus 2026 - 23 September 2026</small></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <img class="date-sep" src="assets/date-sep.svg" width="368" height="0.5" alt="">
+        <button class="date-opt" type="button" role="radio" aria-checked="false" data-value="90">
+          <span><b>90 hari terakhir</b><small>25 Agustus 2026 - 23 September 2026</small></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <img class="date-sep" src="assets/date-sep.svg" width="368" height="0.5" alt="">
+        <button class="date-opt" type="button" role="radio" aria-checked="false" data-value="custom">
+          <span><b>Atur Tanggal</b></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <div class="date-range">
+          <label class="date-box"><span>Dari</span><b id="rwFromText">22 Sep, 2026</b><input type="date" id="rwFrom" max="2026-09-23" aria-label="Dari tanggal"></label>
+          <label class="date-box"><span>Sampai</span><b id="rwToText">23 Sep, 2026</b><input type="date" id="rwTo" max="2026-09-23" aria-label="Sampai tanggal"></label>
+        </div>
+      </div>
+      <button class="btn btn-44" type="button" data-rw-apply>Pasang filter</button>
+    </div>
+  </div>
+
+  <!-- Sheet Kategori (pilih lebih dari satu) -->
+  <div class="layer" id="rwSheetKategori" role="dialog" aria-modal="true" aria-label="Kategori">
+    <div class="scrim" data-close></div>
+    <div class="sheet sheet-rw">
+      <div class="sheet-handle"><i></i></div>
+      <div class="sheet-head"><h3>Kategori</h3><button class="btn-clear" type="button" data-rw-clear="dKategori">Hapus</button></div>
+      <div class="cat-grid" id="rwCatGrid" role="group" aria-label="Kategori"></div>
+      <div class="sheet-foot"><button class="btn" type="button" data-rw-apply>Pasang filter</button></div>
+    </div>
+  </div>
+
+  <!-- Sheet Kantong -->
+  <div class="layer" id="rwSheetKantong" role="dialog" aria-modal="true" aria-label="Kantong">
+    <div class="scrim" data-close></div>
+    <div class="sheet sheet-rw">
+      <div class="sheet-handle"><i></i></div>
+      <div class="sheet-head"><h3>Kantong</h3><button class="btn-clear" type="button" data-rw-clear="dKantong">Hapus</button></div>
+      <div class="sheet-opts" role="radiogroup" data-group="dKantong">
+        <button class="rw-opt rw-opt--pocket" type="button" role="radio" aria-checked="false" data-value="Kebutuhan">
+          <span class="rw-opt-text"><b>Kebutuhan</b><span>Belanja pokok, tagihan, transportasi</span></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <button class="rw-opt rw-opt--pocket" type="button" role="radio" aria-checked="false" data-value="Gaya Hidup">
+          <span class="rw-opt-text"><b>Gaya Hidup</b><span>Jajan, hiburan, hobi</span></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+        <button class="rw-opt rw-opt--pocket" type="button" role="radio" aria-checked="false" data-value="Tabungan">
+          <span class="rw-opt-text"><b>Tabungan</b><span>Dana darurat &amp; tujuan jangka panjang</span></span>
+          <span class="radio-o"></span><span class="badge-check"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span>
+        </button>
+      </div>
+      <div class="sheet-foot"><button class="btn" type="button" data-rw-apply>Pasang filter</button></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     Tab Pengaturan — section "Pengaturan — Akun & Profil" 797:6752
+     Utama 797:6900 · Akun & Profil 797:6753 / 797:6817 (ada perubahan)
+     Preferensi Finansial 801:10856 · Kalibrasi Alokasi 801:11014
+     ====================================================== -->
+<section class="scr scr--app" data-screen="pengaturan">
+  <div class="sb sb--full" data-sb></div>
+  <div class="app-body pg-body">
+    <header class="pg-header">
+      <h1>Pengaturan</h1>
+      <button class="pg-me" type="button" data-push="akun" aria-label="Akun &amp; Profil"><img src="assets/pg-avatar-btn.svg" width="12" height="12" alt=""></button>
+    </header>
+
+    <section class="pg-profile" aria-label="Ringkasan profil">
+      <div class="pg-profile-id">
+        <span class="pg-initials">FB<i></i></span>
+        <div>
+          <h2>Fransiskus Brian</h2>
+          <p class="pg-sub">fransiskus@email.com</p>
+          <p class="pg-verified"><i></i>Profil Terverifikasi</p>
+        </div>
+      </div>
+      <button class="pg-edit" type="button" data-push="akun" aria-label="Edit profil"><img src="assets/pg-edit.svg" width="15" height="15" alt=""></button>
+    </section>
+
+    <section class="pg-group">
+      <h2 class="pg-h"><img src="assets/pg-h-akun.svg" width="15" height="15" alt="">Akun &amp; Profil</h2>
+      <div class="pg-card">
+        <button class="pg-row" type="button" data-push="akun">
+          <span class="pg-ic" style="background:#edf1ff"><img src="assets/pg-ic-data.svg" width="13.3333" height="13.3333" alt=""></span>
+          <span class="pg-text"><b>Data Diri &amp; Pendapatan</b><span>Ubah profil dasar yang diisi saat onboarding</span></span>
+          <img class="pg-chev" src="assets/pg-chev.svg" width="6.16667" height="10" alt="">
+        </button>
+        <i class="pg-div"></i>
+        <button class="pg-row" type="button" data-push="akun">
+          <span class="pg-ic" style="background:#eeeeec"><img src="assets/pg-ic-link.svg" width="16.6667" height="8.33333" alt=""></span>
+          <span class="pg-text"><b>Akun Terhubung</b><span>Google (Aktif) · Apple ID</span></span>
+          <span class="pg-chip">Tersinkron</span>
+        </button>
+        <i class="pg-div"></i>
+        <div class="pg-row">
+          <button class="pg-logout" type="button">Keluar (Logout)</button>
+          <button class="pg-danger" type="button">Hapus Akun</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pg-group">
+      <h2 class="pg-h"><img src="assets/pg-h-pref.svg" width="14.25" height="13.5" alt="">Preferensi Finansial</h2>
+      <div class="pg-card">
+        <div class="pg-ratio">
+          <div class="row-split">
+            <b>Rasio Alokasi Bulanan</b>
+            <button class="pg-link" type="button" data-push="preferensi">Ubah Rasio<img src="assets/pg-chev-blue.svg" width="4.31667" height="7" alt=""></button>
+          </div>
+          <p class="pg-sub" id="pgRatioText">50% Kebutuhan · 30% Gaya Hidup · 20% Tabungan</p>
+          <div class="pg-bar" id="pgRatioBar"><i style="background:#2656ff"></i><i style="background:#e3a23c"></i><i style="background:#2f6b57"></i></div>
+        </div>
+        <i class="pg-div"></i>
+        <button class="pg-row" type="button" data-push="rekap">
+          <span class="pg-ic" style="background:#e5f0ea"><img src="assets/pg-ic-cal.svg" width="15" height="16.6667" alt=""></span>
+          <span class="pg-text"><b>Rekap Mingguan</b><span>Minggu, 20.00 WIB (Evaluasi santai &amp; refleksi)</span></span>
+          <img class="pg-chev" src="assets/pg-chev.svg" width="6.16667" height="10" alt="">
+        </button>
+        <i class="pg-div"></i>
+        <button class="pg-row" type="button" data-push="preferensi">
+          <span class="pg-ic" style="background:#fbf0dc"><img src="assets/pg-ic-limit.svg" width="16.6667" height="16.6667" alt=""></span>
+          <span class="pg-text"><b>Target Batas Harian</b><span>Plafon harian alokasi gaya hidup</span></span>
+          <span class="pg-value" id="pgLimit">Rp 50.000</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="pg-group">
+      <h2 class="pg-h"><img src="assets/pg-h-notif.svg" width="12" height="15" alt="">Notifikasi &amp; Ritme</h2>
+      <div class="pg-card" id="pgNotif">
+        <div class="pg-row">
+          <span class="pg-text"><b>Izinkan Notifikasi Push</b><span>Menerima kabar refleksi &amp; pencapaian target</span></span>
+          <button class="switch switch--lg" type="button" role="switch" aria-checked="true" data-switch="notif" aria-label="Izinkan Notifikasi Push"><i></i></button>
+        </div>
+        <i class="pg-div"></i>
+        <div class="pg-row">
+          <span class="pg-text pg-text--sm"><b>Catatan &amp; Konversi Waktu Kerja</b><span>Pengingat konversi impuls belanja ke jam hidup</span></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-switch="nWaktu" data-sub aria-label="Catatan &amp; Konversi Waktu Kerja"><i></i></button>
+        </div>
+        <i class="pg-div"></i>
+        <div class="pg-row">
+          <span class="pg-text pg-text--sm"><b>Tantangan Mingguan &amp; Peti Hadiah</b><span>Update checkpoint 7 hari tanpa checkout impulsif</span></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-switch="nTantangan" data-sub aria-label="Tantangan Mingguan &amp; Peti Hadiah"><i></i></button>
+        </div>
+        <i class="pg-div"></i>
+        <div class="pg-row">
+          <span class="pg-text pg-text--sm"><b>Refleksi Malam Tanpa Beban</b><span>Ruang jeda sebelum tidur untuk mengecek kondisi<br>mental</span></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-switch="nRefleksi" data-sub aria-label="Refleksi Malam Tanpa Beban"><i></i></button>
+        </div>
+        <i class="pg-div"></i>
+        <div class="pg-row pg-row--muted">
+          <span class="pg-ic pg-ic--round"><img src="assets/pg-ic-moon.svg" width="15" height="15" alt=""></span>
+          <span class="pg-text"><b>Jam Tenang (Quiet Hours)</b><span>Bebas ping notifikasi pukul 22.00 – 07.00<br>WIB</span></span>
+          <span class="pg-chip pg-chip--on">Aktif</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pg-group">
+      <h2 class="pg-h"><img src="assets/pg-h-privasi.svg" width="12" height="15" alt="">Privasi &amp; Keamanan</h2>
+      <div class="pg-email">
+        <div class="pg-email-top">
+          <span class="pg-email-title"><img src="assets/pg-ic-mail.svg" width="19.25" height="16.5" alt=""><b>Integrasi Email<br>Transaksi</b></span>
+          <span class="pg-pending"><i></i>Belum<br>Terhubung</span>
+        </div>
+        <p>Deteksi otomatis ringkasan pengeluaran bank &amp; e-<br>wallet tanpa input manual berulang.</p>
+        <div class="pg-email-act"><button class="pg-email-btn" type="button">Hubungkan Email<img src="assets/pg-arrow-white.svg" width="12" height="12" alt=""></button></div>
+      </div>
+      <div class="pg-card" style="padding-top:4px">
+        <div class="pg-row">
+          <span class="pg-ic" style="background:#eeeeec"><img src="assets/pg-ic-finger.svg" width="15.0408" height="16.6369" alt=""></span>
+          <span class="pg-text"><b>Kunci Aplikasi Biometrik</b><span>Face ID atau Sidik Jari saat buka aplikasi</span></span>
+          <button class="switch" type="button" role="switch" aria-checked="true" data-switch="bio" aria-label="Kunci Aplikasi Biometrik"><i></i></button>
+        </div>
+        <i class="pg-div"></i>
+        <button class="pg-row" type="button">
+          <span class="pg-ic" style="background:#eeeeec"><img src="assets/pg-ic-download.svg" width="13.3333" height="13.3333" alt=""></span>
+          <span class="pg-text"><b>Unduh Salinan Data</b><span>Ekspor riwayat transaksi format CSV / JSON</span></span>
+          <img class="pg-chev" src="assets/pg-chev.svg" width="6.16667" height="10" alt="">
+        </button>
+        <i class="pg-div"></i>
+        <button class="pg-row" type="button">
+          <span class="pg-ic" style="background:#eeeeec"><img src="assets/pg-ic-doc.svg" width="13.3333" height="16.6667" alt=""></span>
+          <span class="pg-text"><b>Kebijakan Privasi &amp; Ketentuan</b><span>Prinsip enkripsi data finansial lokal</span></span>
+          <img class="pg-chev" src="assets/pg-chev.svg" width="6.16667" height="10" alt="">
+        </button>
+      </div>
+    </section>
+
+    <section class="pg-group">
+      <h2 class="pg-h"><img src="assets/pg-h-bantuan.svg" width="15" height="15" alt="">Bantuan &amp; Komunitas</h2>
+      <div class="pg-card">
+        <button class="pg-row" type="button">
+          <span class="pg-ic" style="background:#e5f0ea"><img src="assets/pg-ic-faq.svg" width="16.6667" height="15" alt=""></span>
+          <span class="pg-text"><b>Pusat Bantuan &amp; FAQ</b><span>Pertanyaan umum seputar mindfulness belanja</span></span>
+          <img class="pg-chev" src="assets/pg-chev.svg" width="6.16667" height="10" alt="">
+        </button>
+        <i class="pg-div"></i>
+        <button class="pg-row" type="button">
+          <span class="pg-ic" style="background:#e5f0ea"><img src="assets/pg-ic-feedback.svg" width="16.6667" height="16.6667" alt=""></span>
+          <span class="pg-text"><b>Kirim Masukan (Feedback)</b><span>Bantu kami menyempurnakan alur aplikasi</span></span>
+          <img class="pg-chev" src="assets/pg-chev.svg" width="6.16667" height="10" alt="">
+        </button>
+        <i class="pg-div"></i>
+        <div class="pg-row pg-row--muted">
+          <span class="pg-text"><b>Versi Aplikasi</b><span>ISFEST 2026 Special Release Candidate</span></span>
+          <span class="pg-version">v1.0.4</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <nav class="bnav" aria-label="Navigasi utama">
+    <button class="bnav-item" type="button" data-tab="dash"><img src="assets/nav-house.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item" type="button" data-tab="tantangan"><img src="assets/nav-scroll.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item" type="button" data-tab="riwayat"><img src="assets/nav-history.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item is-active" type="button" data-tab="pengaturan" aria-current="page"><img src="assets/nav-gear-active.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+</section>
+
+<!-- ======================================================
+     Akun & Profil — 797:6753 (awal) · 797:6817 (ada perubahan setelah Google dihubungkan)
+     ====================================================== -->
+<section class="scr scr--app" data-screen="akun">
+  <div class="sb sb--full" data-sb></div>
+  <div class="rekap-header akun-header">
+    <button class="back-circle" type="button" data-back aria-label="Kembali"><img src="assets/back-circle.svg" width="38" height="37" alt=""></button>
+    <h1>Akun &amp; Profil</h1>
+  </div>
+  <div class="app-body akun-body" id="akunBody">
+    <div class="akun-id">
+      <img class="akun-photo" src="assets/akun-avatar.png" width="76" height="76" alt="Foto profil">
+      <div class="akun-name">
+        <h2>Fransiskus Brian</h2>
+        <p class="akun-email" data-linked>fransiskus@email.com</p>
+        <p class="akun-status" data-linked><span class="chip-ok"><img src="assets/dot-verified.svg" width="6" height="6" alt="">Terverifikasi</span></p>
+        <p class="akun-since">Mencatat sejak 12 Januari 2026</p>
+      </div>
+    </div>
+
+    <div class="akun-sec">
+      <h3>Tentang kamu</h3>
+      <div class="fact-list">
+        <button class="fact" type="button" data-linked><span>Nama panggilan</span><img class="fact-dot" id="akunDot" src="assets/dot-changed.svg" width="6" height="6" alt="Belum disimpan"><em class="fact-strong-ink">Bri</em><i>›</i></button>
+        <i class="fact-sep" data-linked></i>
+        <button class="fact" type="button"><span>Usia</span><em>23 tahun</em><i>›</i></button>
+        <i class="fact-sep"></i>
+        <button class="fact" type="button"><span>Status</span><em>Mahasiswa / Fresh Grad</em><i>›</i></button>
+        <i class="fact-sep"></i>
+        <button class="fact" type="button"><span>Pemasukan bulanan</span><b>Rp 5.000.000</b><i>›</i></button>
+      </div>
+      <p class="caption">Dipakai untuk membagi kantongmu.</p>
+      <button class="akun-link" type="button" data-push="preferensi">Atur pembagiannya di Preferensi Finansial</button>
+    </div>
+
+    <div class="akun-sec">
+      <h3>Cara masuk</h3>
+      <div class="method">
+        <span class="method-logo"><img src="assets/logo-google.svg" width="20" height="20" alt=""></span>
+        <span class="method-text"><b>Google</b><span id="googleSub">Belum terhubung</span></span>
+        <span class="chip-ok" id="googleOn">Aktif</span>
+        <button class="pill-connect" type="button" id="googleConnect">Hubungkan</button>
+      </div>
+      <div class="method">
+        <span class="method-logo"><img src="assets/logo-apple.svg" width="20" height="20" alt=""></span>
+        <span class="method-text"><b>Apple ID</b><span>Belum terhubung</span></span>
+        <button class="pill-connect" type="button">Hubungkan</button>
+      </div>
+    </div>
+
+    <div class="akun-delete">
+      <i></i>
+      <button type="button">Hapus akun</button>
+      <p class="caption">Menghapus semua catatan, kantong, dan koleksi maskot. Tidak bisa dibatalkan.</p>
+    </div>
+  </div>
+
+  <div class="save-bar" id="akunSaveBar">
+    <p class="caption">1 perubahan belum disimpan</p>
+    <div class="save-bar-btns">
+      <button class="btn btn-50 btn-muted" type="button" data-akun="batal">Batal</button>
+      <button class="btn btn-50" type="button" data-akun="simpan">Simpan</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     Preferensi Finansial — 801:10856
+     ====================================================== -->
+<section class="scr scr--app" data-screen="preferensi">
+  <div class="sb sb--full" data-sb></div>
+  <div class="pref-bar">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Preferensi Finansial</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+  </div>
+  <div class="app-body pref-body">
+    <section class="pref-sec">
+      <div class="pref-head"><h2>Rasio Alokasi Bulanan</h2><span>Basis Rp 5.000.000</span></div>
+      <div class="pref-card alloc-card">
+        <div class="alloc-title"><b id="prefRatioName">Keuangan Seimbang</b><span>Cicilan didahulukan agar lekas lega.</span></div>
+        <div data-ratio="pref"></div>
+        <div class="pref-actions">
+          <button class="btn" type="button" data-push="kalibrasi">Re-kalibrasi Rasio</button>
+          <div class="pref-manual"><button class="btn-manual" type="button">Ubah Rasio Manual</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pref-sec">
+      <div class="pref-head"><h2>Target Batas Harian</h2><span class="pref-live"><i></i>Aktif</span></div>
+      <div class="pref-card">
+        <div class="limit-top">
+          <label class="limit-amount"><input id="prefLimit" inputmode="numeric" autocomplete="off" aria-label="Target batas harian"><span>/ hari</span></label>
+          <p class="limit-eq"><img src="assets/pref-check.svg" width="12.5" height="12.5" alt=""><span id="prefLimitPct">Setara 66% dari plafon harian gaya hidup</span></p>
+        </div>
+        <div class="limit-note"><img src="assets/pref-shield.svg" width="12" height="17" alt=""><p>Angka ini menjaga agar pengeluaran harian tidak<br>menggerus kantong esensial dan tabunganmu<br>secara perlahan.</p></div>
+        <div class="limit-chips">
+          <p>Pilih batas nyaman</p>
+          <div role="radiogroup" aria-label="Pilih batas nyaman" data-group="dLimitPick">
+            <button type="button" role="radio" aria-checked="false" data-value="25000">25 Rb</button>
+            <button type="button" role="radio" aria-checked="false" data-value="50000">50 Rb</button>
+            <button type="button" role="radio" aria-checked="false" data-value="75000">75 Rb</button>
+            <button type="button" role="radio" aria-checked="false" data-value="custom">Kustom</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pref-sec">
+      <div class="pref-head"><h2>Siklus Keuangan</h2></div>
+      <div class="pref-card pref-card--list">
+        <div class="cycle-row">
+          <span class="cycle-ic"><img src="assets/pref-cal.svg" width="15" height="16.6667" alt=""></span>
+          <span class="cycle-text"><b>Tanggal Pemasukan Utama</b><span>Tanggal 25 setiap bulan</span></span>
+          <button class="cycle-edit" type="button">Ubah<img src="assets/pref-chev.svg" width="4.93333" height="8" alt=""></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="pref-foot">
+      <button class="btn" type="button" id="prefSave">Simpan Preferensi</button>
+      <p class="caption">Perubahan akan langsung disinkronkan ke dasbor harianmu</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     Kalibrasi Alokasi — 801:11014
+     ====================================================== -->
+<section class="scr scr--app" data-screen="kalibrasi">
+  <div class="sb sb--full" data-sb></div>
+  <div class="pref-bar">
+    <div class="appbar">
+      <button class="back" type="button" data-back aria-label="Kembali"><img src="assets/caret-left.svg" width="26" height="26" alt=""></button>
+      <h1 class="appbar-title">Kalibrasi Alokasi</h1>
+      <img class="appbar-avatar" src="assets/header-avatar.png" width="40" height="40" alt="Foto profil">
+    </div>
+  </div>
+  <div class="app-body kal-body">
+    <div class="kal-card">
+      <span class="kal-badge"><i></i>+18% disiplin alokasi dibanding pekan lalu</span>
+      <p class="kal-score"><b>86%</b><span>Target Tercapai</span></p>
+      <div class="kal-pet"><b id="kalPet">Bucky</b><p>Temanmu terbangun 6 dari 7 hari karena kamu rajin mencatat.</p></div>
+    </div>
+
+    <div class="kal-card">
+      <div class="kal-mile-head"><h2>Pencapaian Bebas Cicilan</h2><span>1 Cicilan Telah Lunas Pekan Ini</span></div>
+      <div class="kal-impact">
+        <div class="row-split kal-impact-head">
+          <span><b>Cicilan Paylater Handphone</b><small>Total Rp 7.400.000 • Selesai 23 Oktober 2026</small></span>
+          <em>LUNAS</em>
+        </div>
+        <p>Tuntas <b>14 Hari</b> lebih awal dari estimasi semula<br>berkat rem alokasi jajan malam.</p>
+      </div>
+      <div class="kal-time">
+        <img src="assets/kal-hourglass.svg" width="13.3333" height="18.6667" alt="">
+        <div><b>Dampak Waktu Nyata</b><p>+14 hari kebebasan finansial dimajukan.<br>Anggaran <strong>Rp 350.000/bln</strong> kini dialihkan<br>penuh ke Kantong Dana Darurat.</p></div>
+      </div>
+    </div>
+
+    <div class="kal-options">
+      <div class="kal-options-head"><h2>Pilih Fokus Alokasi Baru</h2><span>Pilih satu opsi</span></div>
+      <div class="kal-opt-list" role="radiogroup" aria-label="Pilih fokus alokasi baru" data-group="kalOpt">
+        <div class="kal-opt-card">
+          <button class="kal-opt" type="button" role="radio" aria-checked="false" data-value="darurat">
+            <span class="kal-opt-main">
+              <span class="kal-opt-copy">
+                <span class="kal-opt-title"><b>Perkuat Dana Darurat</b><em>Rekomendasi</em></span>
+                <span class="kal-opt-desc">Menambah ketahanan hidupmu +18 hari ke<br>depan jika terjadi hal darurat.</span>
+              </span>
+              <span class="kal-pill"><i style="background:#2f6b57"></i><span style="color:#065f46">Tabungan &amp; Investasi (+10%)</span></span>
+            </span>
+            <span class="kal-radio"><img class="kal-radio-off" src="assets/kal-radio.svg" width="20" height="22" alt=""><span class="kal-radio-on"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+          </button>
+          <i class="kal-div"></i><i class="kal-div"></i>
+        </div>
+        <div class="kal-opt-card">
+          <button class="kal-opt" type="button" role="radio" aria-checked="false" data-value="impian">
+            <span class="kal-opt-main">
+              <span class="kal-opt-copy">
+                <span class="kal-opt-title"><b>Bikin Tabungan Impian</b></span>
+                <span class="kal-opt-desc">Mulai pos baru untuk liburan, gadget incaran,<br>atau tujuan spesifikmu.</span>
+              </span>
+              <span class="kal-pill"><i style="background:#2f6b57"></i><span style="color:#065f46">Tabungan &amp; Investasi (+20%)</span></span>
+            </span>
+            <span class="kal-radio"><img class="kal-radio-off" src="assets/kal-radio.svg" width="20" height="22" alt=""><span class="kal-radio-on"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+          </button>
+          <i class="kal-div"></i><i class="kal-div"></i>
+        </div>
+        <div class="kal-opt-card">
+          <button class="kal-opt" type="button" role="radio" aria-checked="false" data-value="santai">
+            <span class="kal-opt-main">
+              <span class="kal-opt-copy">
+                <span class="kal-opt-title"><b>Longgarkan Alokasi Santai</b></span>
+                <span class="kal-opt-desc">Tambahkan sedikit ruang napas ke jatah jajan &amp;<br>gaya hidup mingguanmu.</span>
+              </span>
+              <span class="kal-pill"><i style="background:#bc6f03"></i><span style="color:#bc6f03">Gaya Hidup (+10%)</span></span>
+            </span>
+            <span class="kal-radio"><img class="kal-radio-off" src="assets/kal-radio.svg" width="20" height="22" alt=""><span class="kal-radio-on"><img src="assets/check-badge-12.svg" width="12" height="12" alt=""></span></span>
+          </button>
+          <i class="kal-div"></i><i class="kal-div"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="kal-preview alloc-card">
+      <div class="alloc-title"><b id="kalRatioName">Perkuat Dana Darurat</b><span>Cicilan didahulukan agar lekas lega.</span></div>
+      <div data-ratio="kal"></div>
+    </div>
+
+    <div class="kal-whisper" id="kalWhisper">
+      <span class="kal-whisper-ic"><img src="assets/kal-mascot.svg" width="20.4065" height="20.4065" alt=""></span>
+      <div><p>“Pilihan bijak! Mengamankan dana darurat<br>di awal bikin kamu tidur jauh lebih nyenyak<br>tanpa cemas mendadak.”</p><span>— Kawan Pocket</span></div>
+    </div>
+
+    <div class="kal-cta">
+      <button class="kal-apply" type="button" id="kalApply"><img src="assets/kal-cta.svg" width="17.0054" height="17.0054" alt=""><span>Terapkan ke Alokasi Baru</span></button>
+      <button class="kal-manual" type="button">Atur Persentase Manual di Slider</button>
+    </div>
+  </div>
+
+  <nav class="bnav" aria-label="Navigasi utama">
+    <button class="bnav-item" type="button" data-tab="dash"><img src="assets/nav-house.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item" type="button" data-tab="tantangan"><img src="assets/nav-scroll.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item" type="button" data-tab="riwayat"><img src="assets/nav-history.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item is-active" type="button" data-tab="pengaturan" aria-current="page"><img src="assets/nav-gear-active.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+</section>
+
+<!-- ======================================================
+     Lemari maskot — section "Obtain & Choose Item" 797:7203
+     Pilih item 797:7204 (belum dipakai) / 797:7331 (Kemeja + Kalung Merah dipakai)
+     Peti Pencapaian 797:7463 → 797:7506 → 797:7525
+     ====================================================== -->
+<section class="scr scr--app lm" data-screen="lemari">
+  <div class="lm-hero">
+    <div class="sb sb--dash" data-sb="dash" style="padding:0 24px"></div>
+    <div class="lm-stage">
+      <div class="lm-cat" id="lmCat"></div>
+    </div>
+  </div>
+  <div class="lm-sheet">
+    <div class="lm-head"><h2 id="lmTitle">Aksesoris Bucky</h2><span id="lmCount">10 item</span></div>
+    <div class="lm-grid-wrap" id="lmScroll">
+      <div class="lm-grid" id="lmGrid" role="group" aria-label="Aksesoris"></div>
+    </div>
+    <div class="lm-pager">
+      <button class="lm-page-btn" type="button" data-lm-page="-1" aria-label="Halaman sebelumnya"><img src="assets/lemari-caret-l.svg" width="16" height="16" alt=""></button>
+      <span class="lm-dots" id="lmDots"></span>
+      <button class="lm-page-btn lm-page-btn--next" type="button" data-lm-page="1" aria-label="Halaman berikutnya"><img src="assets/lemari-caret-r.svg" width="16" height="16" alt=""></button>
+    </div>
+  </div>
+  <nav class="bnav" aria-label="Navigasi utama">
+    <button class="bnav-item is-active" type="button" data-tab="dash" aria-current="page"><img src="assets/nav-house-active.svg" width="24" height="24" alt="">Beranda</button>
+    <button class="bnav-item" type="button" data-tab="tantangan"><img src="assets/nav-scroll.svg" width="24" height="24" alt="">Tantangan</button>
+    <button class="bnav-item" type="button" data-tab="riwayat"><img src="assets/nav-history.svg" width="24" height="24" alt="">Riwayat</button>
+    <button class="bnav-item" type="button" data-tab="pengaturan"><img src="assets/nav-gear.svg" width="24" height="24" alt="">Pengaturan</button>
+  </nav>
+</section>
+
+<section class="scr scr--app peti" data-screen="peti" data-step="tutup">
+  <div class="sb sb--light" data-sb="light" style="width:100%;padding:0 14px"></div>
+
+  <div class="peti-step peti-step--tutup">
+    <p class="peti-title">Selamat! Kamu berhasil dapat <span>Peti Pencapaian!</span></p>
+    <div class="peti-chest"><img src="assets/chest-closed.png" width="333" height="250" alt="Peti Pencapaian tertutup"></div>
+    <div class="peti-actions">
+      <button class="btn-gold" type="button" id="petiOpen">Buka Peti Pencapaian</button>
+      <button class="peti-link" type="button" data-back>Buka nanti</button>
+    </div>
+  </div>
+
+  <div class="peti-step peti-step--buka">
+    <p class="peti-title">Selamat! Kamu berhasil dapat <span>Peti Pencapaian!</span></p>
+    <img class="peti-open" src="assets/chest-open.png" width="281" height="259" alt="Peti Pencapaian terbuka">
+    <div class="peti-actions-space"></div>
+  </div>
+
+  <div class="peti-step peti-step--hadiah">
+    <div class="peti-reward-head">
+      <button class="peti-x" type="button" data-back aria-label="Tutup"><img src="assets/icon-x-white.svg" width="20" height="20" alt=""></button>
+      <p class="peti-title">Kamu Berhasil Mendapatkan Aksesoris Kemeja Merah!</p>
+    </div>
+    <div class="peti-card">
+      <span class="peti-tag">Aksesoris Baju</span>
+      <div class="peti-item">
+        <div class="peti-item-img"><span class="crop" style="width:180px;height:180px"><img src="assets/items-sheet.png" alt="Kemeja Merah" style="width:581.82%;height:325%;left:-210.49%;top:-25.05%"></span></div>
+        <div class="peti-item-text">
+          <b>Kemeja Merah</b>
+          <p>Hangat dan rapi, kemeja ini singgah begitu saja di lemari <strong data-pet-name>Bucky</strong>. Kadang kebiasaan baik dibalas kejutan kecil yang tak terduga.</p>
+        </div>
+      </div>
+      <div class="peti-card-actions">
+        <button class="btn-reward" type="button" data-peti="pakai">Gunakan Sekarang</button>
+        <button class="peti-link peti-link--muted" type="button" data-peti="simpan">Simpan di Lemari</button>
+      </div>
+    </div>
+  </div>
+</section>
+        </div>
+        <!-- Keypad angka iOS untuk layar PIN -->
+        <div class="kbd-host" id="kbdHost"></div>
+        <div class="home-indicator"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
